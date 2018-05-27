@@ -237,5 +237,34 @@ double atofe(const char s[]) {
     return esign == 1 ? mantisa * exp : mantisa / exp; //culculate result
 
 }
+void flush(){
+    int c;
+    while ((c = getchar()) != EOF) {
+        if (c == '"'){
+            putchar(c);
+            c = getchar();
+            putchar(c);
+            while(c != '"') {
+                c = getchar();
+                putchar(c);
+            }
+        }
+        else if (c == '/'){
+             int d = getchar();
+            if (d == '/') {
+                while (d != '\n')
+                d = getchar();
+                putchar(d);
+            }
 
+            else if ( d == '*'){
+                while ( d != '/' || c != '*'){
+                    c = d;
+                    d = getchar();                }
+            }
+            else putchar(c);
+        }
+        else putchar(c);
+    }
+}
 /** GET FROM task.h */
