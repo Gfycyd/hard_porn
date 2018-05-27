@@ -174,13 +174,13 @@ int htoi(const char input[]) {
                         number = 15;
                         break;
                     default:
-                        return -1;             //if there is wrong input
+                        return -1;             //if there is wrong input return -1
 
                 }
             }
             int power = i - j - 1;
             POW(base, power);
-            result += number * base;
+            result += number * base;           //add 16 in power needed * number
         }
     } else return -1;
     return result;
@@ -192,11 +192,11 @@ int strrindex(const char s[], const char t[]) {
     STRING_LEN(a1, s);
     STRING_LEN(a2, t);
     i = a1 - a2;
-    for (; i > -1 && found == 0;) {
+    for (; i > -1 && found == 0;) {                        //start from the right side of array
         found = 1;
-        for (j = i; (j - i) < a2 && found == 1; j++) {
-            if (s[j] != t[j - i]) found = 0;
-        }
+        for (j = i; (j - i) < a2 && found == 1; j++) {     //start checking from current plase (left -> right)
+            if (s[j] != t[j - i]) found = 0;               //if some char does not match, go further
+        }                                                  //if all match -> found, stop loop
         if (found == 0) i--;
     }
     if (found == 0) return -1;
@@ -220,20 +220,21 @@ double atofe(const char s[]) {
         power *= 10.0;
     }
 
+    //additional part
 
-    if (s[i] == 'E' ||s[i] == 'e') {
+    if (s[i] == 'E' ||s[i] == 'e') {                  //find e, if exist
         i++;
         exp = 10.0;
     }
-    esign = (s[i] == '-') ? -1 : 1;
+    esign = (s[i] == '-') ? -1 : 1;                   //denote sign
     if (s[i] == '+' || s[i] == '-')
         i++;
-    for(epower = 0; isdigit(s[i]); i++) {
+    for(epower = 0; isdigit(s[i]); i++) {             //denote power
         epower = 10 * epower + (s[i] - '0');
     }
     POW(exp,epower);
     mantisa = sign * (val/power);
-    return esign == 1 ? mantisa * exp : mantisa / exp;
+    return esign == 1 ? mantisa * exp : mantisa / exp; //culculate result
 
 }
 
