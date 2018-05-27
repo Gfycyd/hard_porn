@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../tests/../src/task.h
+stdio.h
+-
+stdlib.h
+../tests/../src/stdlib.h
+
+/cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/src/task.c
+ctype.h
+-
+task.h
+/cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/src/task.h
+
+/cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/src/task.h
+stdio.h
+-
+stdlib.h
+/cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/src/stdlib.h
+
+/cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/tests/test_task.c
+check.h
+-
+math.h
+-
+task.h
+/cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/tests/task.h
+
