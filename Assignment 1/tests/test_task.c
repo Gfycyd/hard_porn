@@ -187,7 +187,21 @@ END_TEST
 
 START_TEST (test_itoa)
 {
-
+	int i;
+	    int t = 1;
+    int n = -400;
+    int w = 10;
+    char s [10000];
+    itoa(n,s,w);
+    char t [] = "      -400";
+    i = 0;
+   while (s[i] != '\0') {
+       if (t[i] != s[i]) {
+           t = 0
+       }
+       ++i;
+   }
+	ck_assert(t == 0);
 }
 END_TEST
 
