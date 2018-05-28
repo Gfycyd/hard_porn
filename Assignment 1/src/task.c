@@ -357,5 +357,18 @@ char *escape(const char from[], char to[]){
 }
 
 char *expand(const char s1[],  char s2[]){
+    int i = 0;
+    int j = 0;
+    while(s1[i] != '\0') {
+        int p = s1[i];
+        if (s1[i + 1] == '-' && s1[i + 2] >= p) {
+            i++;
+            while (p < s1[i + 1])
+                s2[j++] = p++;
+        } else
+            s2[j++] = s1[i];
+        ++i;
+    }
+    s2[j]='\0';
 }
 /** GET FROM task.h */
