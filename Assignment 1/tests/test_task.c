@@ -181,7 +181,7 @@ START_TEST (test_binsearch)
      n = 5;
      int v3 [] = {1,7,5,6,7};
      k = k * binsearch(x,v3,n);
-	ck_assert(-16 == k) 
+	ck_assert(-16 == k) ;
 }
 END_TEST
 
@@ -244,7 +244,67 @@ END_TEST
 
 START_TEST (test_itob)
 {
-
+	int n;
+    char v[10000];
+    int b;
+    n = -10;
+    b = 16;
+    itob(n,v,b);
+    int i = 0;
+    char t [] = "-a";
+    int s = 1;
+    while (v[i] != '\0') {
+        if (t[i] != v[i]) {
+            s = 0;
+        }
+        ++i;
+    }
+    n = 100;
+    b = 16;
+    itob(n,v,b);
+    char t2 [] = "64";
+     i = 0;
+    while (v[i] != '\0') {
+        if (t2[i] != v[i]) {
+            s = 0;
+        }
+        ++i;
+    }
+    n = 170;
+    b = 9;
+    itob(n,v,b);
+    char t3 [] = "208";
+    i = 0;
+    while (v[i] != '\0') {
+        if (t3[i] != v[i]) {
+            s = 0;
+        }
+        ++i;
+    }
+    n = 0;
+    b = 16;
+    itob(n,v,b);
+    char t4 [] = "0";
+    i = 0;
+    while (v[i] != '\0') {
+        if (t4[i] != v[i]) {
+            s = 0;
+        }
+        ++i;
+    }
+    n = 14;
+    b = 2;
+    itob(n,v,b);
+    char t5 [] = "1110";
+    i = 0;
+    while (v[i] != '\0') {
+        if (t5[i] != v[i]) {
+            s = 0;
+        }
+        ++i;
+    }
+	ck_assert(1 == s);
+	
 }
 END_TEST
 
