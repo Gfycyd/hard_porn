@@ -187,7 +187,7 @@ END_TEST
 
 START_TEST (test_itoa)
 {
-	int i;
+ int i;
     //test_one_three();
     int n = -400;
     int w = 10;
@@ -208,8 +208,8 @@ START_TEST (test_itoa)
     itoa(n,s2,w);
     char t2 [] = " -4";
     i = 0;
-    while (s[i] != '\0') {
-        if (t[i] != s[i]) {
+    while (s2[i] != '\0') {
+        if (t2[i] != s2[i]) {
             v = 0;
         }
         ++i;
@@ -220,8 +220,8 @@ START_TEST (test_itoa)
     itoa(n,s3,w);
     char t3 [] = "100";
     i = 0;
-    while (s[i] != '\0') {
-        if (t[i] != s[i]) {
+    while (s3[i] != '\0') {
+        if (t3[i] != s3[i]) {
             v = 0;
         }
         ++i;
