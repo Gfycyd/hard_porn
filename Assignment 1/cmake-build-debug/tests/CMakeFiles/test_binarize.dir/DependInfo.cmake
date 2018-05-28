@@ -4,8 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/src/binarize.c" "/cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/cmake-build-debug/tests/CMakeFiles/test_binarize.dir/__/src/binarize.c.o"
-  "/cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/tests/test_binarize.c" "/cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/cmake-build-debug/tests/CMakeFiles/test_binarize.dir/test_binarize.c.o"
+  "/root/CLionProjects/very_hard_porn/Assignment 1/src/binarize.c" "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/tests/CMakeFiles/test_binarize.dir/__/src/binarize.c.o"
+  "/root/CLionProjects/very_hard_porn/Assignment 1/src/sykatest.c" "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/tests/CMakeFiles/test_binarize.dir/__/src/sykatest.c.o"
+  "/root/CLionProjects/very_hard_porn/Assignment 1/tests/test_binarize.c" "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/tests/CMakeFiles/test_binarize.dir/test_binarize.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

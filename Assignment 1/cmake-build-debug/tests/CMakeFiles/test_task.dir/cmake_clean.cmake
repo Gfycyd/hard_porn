@@ -2,8 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/test_task.dir/test_task.c.o"
   "CMakeFiles/test_task.dir/__/src/task.c.o"
   "test_task.pdb"
-  "test_task.exe"
-  "libtest_task.dll.a"
+  "test_task"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /cygdrive/c/Users/ekivo/.CLion2018.1/system/cygwin_cmake/bin/cmake.exe
+CMAKE_COMMAND = /root/clion-2018.1.3/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /cygdrive/c/Users/ekivo/.CLion2018.1/system/cygwin_cmake/bin/cmake.exe -E remove -f
+RM = /root/clion-2018.1.3/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template
+CMAKE_SOURCE_DIR = "/root/CLionProjects/very_hard_porn/Assignment 1"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/cmake-build-debug
+CMAKE_BINARY_DIR = "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include tests/CMakeFiles/test_binarize.dir/depend.make
@@ -59,16 +59,16 @@ include tests/CMakeFiles/test_binarize.dir/flags.make
 
 tests/CMakeFiles/test_binarize.dir/test_binarize.c.o: tests/CMakeFiles/test_binarize.dir/flags.make
 tests/CMakeFiles/test_binarize.dir/test_binarize.c.o: ../tests/test_binarize.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object tests/CMakeFiles/test_binarize.dir/test_binarize.c.o"
-	cd /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/cmake-build-debug/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test_binarize.dir/test_binarize.c.o   -c /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/tests/test_binarize.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object tests/CMakeFiles/test_binarize.dir/test_binarize.c.o"
+	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/tests" && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test_binarize.dir/test_binarize.c.o   -c "/root/CLionProjects/very_hard_porn/Assignment 1/tests/test_binarize.c"
 
 tests/CMakeFiles/test_binarize.dir/test_binarize.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/test_binarize.dir/test_binarize.c.i"
-	cd /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/cmake-build-debug/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/tests/test_binarize.c > CMakeFiles/test_binarize.dir/test_binarize.c.i
+	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/tests" && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/root/CLionProjects/very_hard_porn/Assignment 1/tests/test_binarize.c" > CMakeFiles/test_binarize.dir/test_binarize.c.i
 
 tests/CMakeFiles/test_binarize.dir/test_binarize.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test_binarize.dir/test_binarize.c.s"
-	cd /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/cmake-build-debug/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/tests/test_binarize.c -o CMakeFiles/test_binarize.dir/test_binarize.c.s
+	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/tests" && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/root/CLionProjects/very_hard_porn/Assignment 1/tests/test_binarize.c" -o CMakeFiles/test_binarize.dir/test_binarize.c.s
 
 tests/CMakeFiles/test_binarize.dir/test_binarize.c.o.requires:
 
@@ -83,16 +83,16 @@ tests/CMakeFiles/test_binarize.dir/test_binarize.c.o.provides.build: tests/CMake
 
 tests/CMakeFiles/test_binarize.dir/__/src/binarize.c.o: tests/CMakeFiles/test_binarize.dir/flags.make
 tests/CMakeFiles/test_binarize.dir/__/src/binarize.c.o: ../src/binarize.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object tests/CMakeFiles/test_binarize.dir/__/src/binarize.c.o"
-	cd /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/cmake-build-debug/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test_binarize.dir/__/src/binarize.c.o   -c /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/src/binarize.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object tests/CMakeFiles/test_binarize.dir/__/src/binarize.c.o"
+	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/tests" && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test_binarize.dir/__/src/binarize.c.o   -c "/root/CLionProjects/very_hard_porn/Assignment 1/src/binarize.c"
 
 tests/CMakeFiles/test_binarize.dir/__/src/binarize.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/test_binarize.dir/__/src/binarize.c.i"
-	cd /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/cmake-build-debug/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/src/binarize.c > CMakeFiles/test_binarize.dir/__/src/binarize.c.i
+	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/tests" && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/root/CLionProjects/very_hard_porn/Assignment 1/src/binarize.c" > CMakeFiles/test_binarize.dir/__/src/binarize.c.i
 
 tests/CMakeFiles/test_binarize.dir/__/src/binarize.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test_binarize.dir/__/src/binarize.c.s"
-	cd /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/cmake-build-debug/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/src/binarize.c -o CMakeFiles/test_binarize.dir/__/src/binarize.c.s
+	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/tests" && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/root/CLionProjects/very_hard_porn/Assignment 1/src/binarize.c" -o CMakeFiles/test_binarize.dir/__/src/binarize.c.s
 
 tests/CMakeFiles/test_binarize.dir/__/src/binarize.c.o.requires:
 
@@ -105,36 +105,63 @@ tests/CMakeFiles/test_binarize.dir/__/src/binarize.c.o.provides: tests/CMakeFile
 tests/CMakeFiles/test_binarize.dir/__/src/binarize.c.o.provides.build: tests/CMakeFiles/test_binarize.dir/__/src/binarize.c.o
 
 
+tests/CMakeFiles/test_binarize.dir/__/src/sykatest.c.o: tests/CMakeFiles/test_binarize.dir/flags.make
+tests/CMakeFiles/test_binarize.dir/__/src/sykatest.c.o: ../src/sykatest.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building C object tests/CMakeFiles/test_binarize.dir/__/src/sykatest.c.o"
+	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/tests" && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test_binarize.dir/__/src/sykatest.c.o   -c "/root/CLionProjects/very_hard_porn/Assignment 1/src/sykatest.c"
+
+tests/CMakeFiles/test_binarize.dir/__/src/sykatest.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/test_binarize.dir/__/src/sykatest.c.i"
+	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/tests" && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/root/CLionProjects/very_hard_porn/Assignment 1/src/sykatest.c" > CMakeFiles/test_binarize.dir/__/src/sykatest.c.i
+
+tests/CMakeFiles/test_binarize.dir/__/src/sykatest.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test_binarize.dir/__/src/sykatest.c.s"
+	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/tests" && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/root/CLionProjects/very_hard_porn/Assignment 1/src/sykatest.c" -o CMakeFiles/test_binarize.dir/__/src/sykatest.c.s
+
+tests/CMakeFiles/test_binarize.dir/__/src/sykatest.c.o.requires:
+
+.PHONY : tests/CMakeFiles/test_binarize.dir/__/src/sykatest.c.o.requires
+
+tests/CMakeFiles/test_binarize.dir/__/src/sykatest.c.o.provides: tests/CMakeFiles/test_binarize.dir/__/src/sykatest.c.o.requires
+	$(MAKE) -f tests/CMakeFiles/test_binarize.dir/build.make tests/CMakeFiles/test_binarize.dir/__/src/sykatest.c.o.provides.build
+.PHONY : tests/CMakeFiles/test_binarize.dir/__/src/sykatest.c.o.provides
+
+tests/CMakeFiles/test_binarize.dir/__/src/sykatest.c.o.provides.build: tests/CMakeFiles/test_binarize.dir/__/src/sykatest.c.o
+
+
 # Object files for target test_binarize
 test_binarize_OBJECTS = \
 "CMakeFiles/test_binarize.dir/test_binarize.c.o" \
-"CMakeFiles/test_binarize.dir/__/src/binarize.c.o"
+"CMakeFiles/test_binarize.dir/__/src/binarize.c.o" \
+"CMakeFiles/test_binarize.dir/__/src/sykatest.c.o"
 
 # External object files for target test_binarize
 test_binarize_EXTERNAL_OBJECTS =
 
-tests/test_binarize.exe: tests/CMakeFiles/test_binarize.dir/test_binarize.c.o
-tests/test_binarize.exe: tests/CMakeFiles/test_binarize.dir/__/src/binarize.c.o
-tests/test_binarize.exe: tests/CMakeFiles/test_binarize.dir/build.make
-tests/test_binarize.exe: tests/CMakeFiles/test_binarize.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable test_binarize.exe"
-	cd /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/cmake-build-debug/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_binarize.dir/link.txt --verbose=$(VERBOSE)
+tests/test_binarize: tests/CMakeFiles/test_binarize.dir/test_binarize.c.o
+tests/test_binarize: tests/CMakeFiles/test_binarize.dir/__/src/binarize.c.o
+tests/test_binarize: tests/CMakeFiles/test_binarize.dir/__/src/sykatest.c.o
+tests/test_binarize: tests/CMakeFiles/test_binarize.dir/build.make
+tests/test_binarize: tests/CMakeFiles/test_binarize.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable test_binarize"
+	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/tests" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_binarize.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-tests/CMakeFiles/test_binarize.dir/build: tests/test_binarize.exe
+tests/CMakeFiles/test_binarize.dir/build: tests/test_binarize
 
 .PHONY : tests/CMakeFiles/test_binarize.dir/build
 
 tests/CMakeFiles/test_binarize.dir/requires: tests/CMakeFiles/test_binarize.dir/test_binarize.c.o.requires
 tests/CMakeFiles/test_binarize.dir/requires: tests/CMakeFiles/test_binarize.dir/__/src/binarize.c.o.requires
+tests/CMakeFiles/test_binarize.dir/requires: tests/CMakeFiles/test_binarize.dir/__/src/sykatest.c.o.requires
 
 .PHONY : tests/CMakeFiles/test_binarize.dir/requires
 
 tests/CMakeFiles/test_binarize.dir/clean:
-	cd /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/cmake-build-debug/tests && $(CMAKE_COMMAND) -P CMakeFiles/test_binarize.dir/cmake_clean.cmake
+	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/tests" && $(CMAKE_COMMAND) -P CMakeFiles/test_binarize.dir/cmake_clean.cmake
 .PHONY : tests/CMakeFiles/test_binarize.dir/clean
 
 tests/CMakeFiles/test_binarize.dir/depend:
-	cd /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/tests /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/cmake-build-debug /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/cmake-build-debug/tests /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/cmake-build-debug/tests/CMakeFiles/test_binarize.dir/DependInfo.cmake --color=$(COLOR)
+	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/root/CLionProjects/very_hard_porn/Assignment 1" "/root/CLionProjects/very_hard_porn/Assignment 1/tests" "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug" "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/tests" "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/tests/CMakeFiles/test_binarize.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : tests/CMakeFiles/test_binarize.dir/depend
 

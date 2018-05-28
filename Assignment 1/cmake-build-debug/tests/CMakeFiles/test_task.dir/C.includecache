@@ -12,23 +12,27 @@ stdio.h
 stdlib.h
 ../tests/../src/stdlib.h
 
-/cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/src/task.c
+/root/CLionProjects/very_hard_porn/Assignment 1/src/task.c
 ctype.h
 -
+stdbool.h
+-
+string.h
+-
 task.h
-/cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/src/task.h
+/root/CLionProjects/very_hard_porn/Assignment 1/src/task.h
 
-/cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/src/task.h
+/root/CLionProjects/very_hard_porn/Assignment 1/src/task.h
 stdio.h
 -
 stdlib.h
-/cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/src/stdlib.h
+/root/CLionProjects/very_hard_porn/Assignment 1/src/stdlib.h
 
-/cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/tests/test_task.c
+/root/CLionProjects/very_hard_porn/Assignment 1/tests/test_task.c
 check.h
 -
 math.h
 -
 task.h
-/cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/tests/task.h
+/root/CLionProjects/very_hard_porn/Assignment 1/tests/task.h
 

@@ -6,5 +6,5 @@ C_FLAGS =  -std=c99 -Wall -Wextra -Wshadow -g -O0 -g
 
 C_DEFINES = 
 
-C_INCLUDES = -I/cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/tests/. -I/cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/tests/../src 
+C_INCLUDES = -I"/root/CLionProjects/very_hard_porn/Assignment 1/tests/." -I"/root/CLionProjects/very_hard_porn/Assignment 1/tests/../src" 
 

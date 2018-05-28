@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /cygdrive/c/Users/ekivo/.CLion2018.1/system/cygwin_cmake/bin/cmake.exe
+CMAKE_COMMAND = /root/clion-2018.1.3/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /cygdrive/c/Users/ekivo/.CLion2018.1/system/cygwin_cmake/bin/cmake.exe -E remove -f
+RM = /root/clion-2018.1.3/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template
+CMAKE_SOURCE_DIR = "/root/CLionProjects/very_hard_porn/Assignment 1"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/cmake-build-debug
+CMAKE_BINARY_DIR = "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include tests/CMakeFiles/test_task.dir/depend.make
@@ -59,16 +59,16 @@ include tests/CMakeFiles/test_task.dir/flags.make
 
 tests/CMakeFiles/test_task.dir/test_task.c.o: tests/CMakeFiles/test_task.dir/flags.make
 tests/CMakeFiles/test_task.dir/test_task.c.o: ../tests/test_task.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object tests/CMakeFiles/test_task.dir/test_task.c.o"
-	cd /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/cmake-build-debug/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test_task.dir/test_task.c.o   -c /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/tests/test_task.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object tests/CMakeFiles/test_task.dir/test_task.c.o"
+	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/tests" && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test_task.dir/test_task.c.o   -c "/root/CLionProjects/very_hard_porn/Assignment 1/tests/test_task.c"
 
 tests/CMakeFiles/test_task.dir/test_task.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/test_task.dir/test_task.c.i"
-	cd /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/cmake-build-debug/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/tests/test_task.c > CMakeFiles/test_task.dir/test_task.c.i
+	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/tests" && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/root/CLionProjects/very_hard_porn/Assignment 1/tests/test_task.c" > CMakeFiles/test_task.dir/test_task.c.i
 
 tests/CMakeFiles/test_task.dir/test_task.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test_task.dir/test_task.c.s"
-	cd /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/cmake-build-debug/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/tests/test_task.c -o CMakeFiles/test_task.dir/test_task.c.s
+	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/tests" && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/root/CLionProjects/very_hard_porn/Assignment 1/tests/test_task.c" -o CMakeFiles/test_task.dir/test_task.c.s
 
 tests/CMakeFiles/test_task.dir/test_task.c.o.requires:
 
@@ -83,16 +83,16 @@ tests/CMakeFiles/test_task.dir/test_task.c.o.provides.build: tests/CMakeFiles/te
 
 tests/CMakeFiles/test_task.dir/__/src/task.c.o: tests/CMakeFiles/test_task.dir/flags.make
 tests/CMakeFiles/test_task.dir/__/src/task.c.o: ../src/task.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object tests/CMakeFiles/test_task.dir/__/src/task.c.o"
-	cd /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/cmake-build-debug/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test_task.dir/__/src/task.c.o   -c /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/src/task.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object tests/CMakeFiles/test_task.dir/__/src/task.c.o"
+	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/tests" && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test_task.dir/__/src/task.c.o   -c "/root/CLionProjects/very_hard_porn/Assignment 1/src/task.c"
 
 tests/CMakeFiles/test_task.dir/__/src/task.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/test_task.dir/__/src/task.c.i"
-	cd /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/cmake-build-debug/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/src/task.c > CMakeFiles/test_task.dir/__/src/task.c.i
+	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/tests" && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/root/CLionProjects/very_hard_porn/Assignment 1/src/task.c" > CMakeFiles/test_task.dir/__/src/task.c.i
 
 tests/CMakeFiles/test_task.dir/__/src/task.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test_task.dir/__/src/task.c.s"
-	cd /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/cmake-build-debug/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/src/task.c -o CMakeFiles/test_task.dir/__/src/task.c.s
+	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/tests" && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/root/CLionProjects/very_hard_porn/Assignment 1/src/task.c" -o CMakeFiles/test_task.dir/__/src/task.c.s
 
 tests/CMakeFiles/test_task.dir/__/src/task.c.o.requires:
 
@@ -113,15 +113,15 @@ test_task_OBJECTS = \
 # External object files for target test_task
 test_task_EXTERNAL_OBJECTS =
 
-tests/test_task.exe: tests/CMakeFiles/test_task.dir/test_task.c.o
-tests/test_task.exe: tests/CMakeFiles/test_task.dir/__/src/task.c.o
-tests/test_task.exe: tests/CMakeFiles/test_task.dir/build.make
-tests/test_task.exe: tests/CMakeFiles/test_task.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable test_task.exe"
-	cd /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/cmake-build-debug/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_task.dir/link.txt --verbose=$(VERBOSE)
+tests/test_task: tests/CMakeFiles/test_task.dir/test_task.c.o
+tests/test_task: tests/CMakeFiles/test_task.dir/__/src/task.c.o
+tests/test_task: tests/CMakeFiles/test_task.dir/build.make
+tests/test_task: tests/CMakeFiles/test_task.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable test_task"
+	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/tests" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_task.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-tests/CMakeFiles/test_task.dir/build: tests/test_task.exe
+tests/CMakeFiles/test_task.dir/build: tests/test_task
 
 .PHONY : tests/CMakeFiles/test_task.dir/build
 
@@ -131,10 +131,10 @@ tests/CMakeFiles/test_task.dir/requires: tests/CMakeFiles/test_task.dir/__/src/t
 .PHONY : tests/CMakeFiles/test_task.dir/requires
 
 tests/CMakeFiles/test_task.dir/clean:
-	cd /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/cmake-build-debug/tests && $(CMAKE_COMMAND) -P CMakeFiles/test_task.dir/cmake_clean.cmake
+	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/tests" && $(CMAKE_COMMAND) -P CMakeFiles/test_task.dir/cmake_clean.cmake
 .PHONY : tests/CMakeFiles/test_task.dir/clean
 
 tests/CMakeFiles/test_task.dir/depend:
-	cd /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/tests /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/cmake-build-debug /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/cmake-build-debug/tests /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/cmake-build-debug/tests/CMakeFiles/test_task.dir/DependInfo.cmake --color=$(COLOR)
+	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/root/CLionProjects/very_hard_porn/Assignment 1" "/root/CLionProjects/very_hard_porn/Assignment 1/tests" "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug" "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/tests" "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/tests/CMakeFiles/test_task.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : tests/CMakeFiles/test_task.dir/depend
 

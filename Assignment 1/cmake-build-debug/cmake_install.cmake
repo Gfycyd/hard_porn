@@ -1,4 +1,4 @@
-# Install script for directory: /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template
+# Install script for directory: /root/CLionProjects/very_hard_porn/Assignment 1
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -27,6 +27,11 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
+# Install shared libraries without execute permission?
+if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
+  set(CMAKE_INSTALL_SO_NO_EXE "0")
+endif()
+
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
@@ -34,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/cmake-build-debug/tests/cmake_install.cmake")
+  include("/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/tests/cmake_install.cmake")
 
 endif()
 
@@ -46,5 +51,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

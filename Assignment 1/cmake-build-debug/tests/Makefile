@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /cygdrive/c/Users/ekivo/.CLion2018.1/system/cygwin_cmake/bin/cmake.exe
+CMAKE_COMMAND = /root/clion-2018.1.3/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /cygdrive/c/Users/ekivo/.CLion2018.1/system/cygwin_cmake/bin/cmake.exe -E remove -f
+RM = /root/clion-2018.1.3/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template
+CMAKE_SOURCE_DIR = "/root/CLionProjects/very_hard_porn/Assignment 1"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/cmake-build-debug
+CMAKE_BINARY_DIR = "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignmen
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/cygdrive/c/Users/ekivo/.CLion2018.1/system/cygwin_cmake/bin/cmake.exe -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/root/clion-2018.1.3/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/cygdrive/c/Users/ekivo/.CLion2018.1/system/cygwin_cmake/bin/cmake.exe -E echo No\ interactive\ CMake\ dialog\ available.
+	/root/clion-2018.1.3/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -81,7 +81,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target test
 test:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/cygdrive/c/Users/ekivo/.CLion2018.1/system/cygwin_cmake/bin/ctest.exe --force-new-ctest-process $(ARGS)
+	/root/clion-2018.1.3/bin/cmake/bin/ctest --force-new-ctest-process $(ARGS)
 .PHONY : test
 
 # Special rule for the target test
@@ -91,14 +91,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/cmake-build-debug/CMakeFiles /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/cmake-build-debug/tests/CMakeFiles/progress.marks
-	cd /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 tests/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/cmake-build-debug/CMakeFiles 0
+	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_progress_start "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles" "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/tests/CMakeFiles/progress.marks"
+	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 tests/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 tests/clean
+	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 tests/clean
 .PHONY : clean
 
 # The main clean target
@@ -108,22 +108,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 tests/preinstall
+	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 tests/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 tests/preinstall
+	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 tests/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug" && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 tests/CMakeFiles/test_binarize.dir/rule:
-	cd /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_binarize.dir/rule
+	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_binarize.dir/rule
 .PHONY : tests/CMakeFiles/test_binarize.dir/rule
 
 # Convenience name for target.
@@ -133,12 +133,12 @@ test_binarize: tests/CMakeFiles/test_binarize.dir/rule
 
 # fast build rule for target.
 test_binarize/fast:
-	cd /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/cmake-build-debug && $(MAKE) -f tests/CMakeFiles/test_binarize.dir/build.make tests/CMakeFiles/test_binarize.dir/build
+	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_binarize.dir/build.make tests/CMakeFiles/test_binarize.dir/build
 .PHONY : test_binarize/fast
 
 # Convenience name for target.
 tests/CMakeFiles/test_task.dir/rule:
-	cd /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_task.dir/rule
+	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_task.dir/rule
 .PHONY : tests/CMakeFiles/test_task.dir/rule
 
 # Convenience name for target.
@@ -148,7 +148,7 @@ test_task: tests/CMakeFiles/test_task.dir/rule
 
 # fast build rule for target.
 test_task/fast:
-	cd /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/cmake-build-debug && $(MAKE) -f tests/CMakeFiles/test_task.dir/build.make tests/CMakeFiles/test_task.dir/build
+	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_task.dir/build.make tests/CMakeFiles/test_task.dir/build
 .PHONY : test_task/fast
 
 __/src/binarize.o: __/src/binarize.c.o
@@ -157,7 +157,7 @@ __/src/binarize.o: __/src/binarize.c.o
 
 # target to build an object file
 __/src/binarize.c.o:
-	cd /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/cmake-build-debug && $(MAKE) -f tests/CMakeFiles/test_binarize.dir/build.make tests/CMakeFiles/test_binarize.dir/__/src/binarize.c.o
+	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_binarize.dir/build.make tests/CMakeFiles/test_binarize.dir/__/src/binarize.c.o
 .PHONY : __/src/binarize.c.o
 
 __/src/binarize.i: __/src/binarize.c.i
@@ -166,7 +166,7 @@ __/src/binarize.i: __/src/binarize.c.i
 
 # target to preprocess a source file
 __/src/binarize.c.i:
-	cd /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/cmake-build-debug && $(MAKE) -f tests/CMakeFiles/test_binarize.dir/build.make tests/CMakeFiles/test_binarize.dir/__/src/binarize.c.i
+	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_binarize.dir/build.make tests/CMakeFiles/test_binarize.dir/__/src/binarize.c.i
 .PHONY : __/src/binarize.c.i
 
 __/src/binarize.s: __/src/binarize.c.s
@@ -175,8 +175,35 @@ __/src/binarize.s: __/src/binarize.c.s
 
 # target to generate assembly for a file
 __/src/binarize.c.s:
-	cd /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/cmake-build-debug && $(MAKE) -f tests/CMakeFiles/test_binarize.dir/build.make tests/CMakeFiles/test_binarize.dir/__/src/binarize.c.s
+	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_binarize.dir/build.make tests/CMakeFiles/test_binarize.dir/__/src/binarize.c.s
 .PHONY : __/src/binarize.c.s
+
+__/src/sykatest.o: __/src/sykatest.c.o
+
+.PHONY : __/src/sykatest.o
+
+# target to build an object file
+__/src/sykatest.c.o:
+	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_binarize.dir/build.make tests/CMakeFiles/test_binarize.dir/__/src/sykatest.c.o
+.PHONY : __/src/sykatest.c.o
+
+__/src/sykatest.i: __/src/sykatest.c.i
+
+.PHONY : __/src/sykatest.i
+
+# target to preprocess a source file
+__/src/sykatest.c.i:
+	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_binarize.dir/build.make tests/CMakeFiles/test_binarize.dir/__/src/sykatest.c.i
+.PHONY : __/src/sykatest.c.i
+
+__/src/sykatest.s: __/src/sykatest.c.s
+
+.PHONY : __/src/sykatest.s
+
+# target to generate assembly for a file
+__/src/sykatest.c.s:
+	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_binarize.dir/build.make tests/CMakeFiles/test_binarize.dir/__/src/sykatest.c.s
+.PHONY : __/src/sykatest.c.s
 
 __/src/task.o: __/src/task.c.o
 
@@ -184,7 +211,7 @@ __/src/task.o: __/src/task.c.o
 
 # target to build an object file
 __/src/task.c.o:
-	cd /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/cmake-build-debug && $(MAKE) -f tests/CMakeFiles/test_task.dir/build.make tests/CMakeFiles/test_task.dir/__/src/task.c.o
+	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_task.dir/build.make tests/CMakeFiles/test_task.dir/__/src/task.c.o
 .PHONY : __/src/task.c.o
 
 __/src/task.i: __/src/task.c.i
@@ -193,7 +220,7 @@ __/src/task.i: __/src/task.c.i
 
 # target to preprocess a source file
 __/src/task.c.i:
-	cd /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/cmake-build-debug && $(MAKE) -f tests/CMakeFiles/test_task.dir/build.make tests/CMakeFiles/test_task.dir/__/src/task.c.i
+	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_task.dir/build.make tests/CMakeFiles/test_task.dir/__/src/task.c.i
 .PHONY : __/src/task.c.i
 
 __/src/task.s: __/src/task.c.s
@@ -202,7 +229,7 @@ __/src/task.s: __/src/task.c.s
 
 # target to generate assembly for a file
 __/src/task.c.s:
-	cd /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/cmake-build-debug && $(MAKE) -f tests/CMakeFiles/test_task.dir/build.make tests/CMakeFiles/test_task.dir/__/src/task.c.s
+	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_task.dir/build.make tests/CMakeFiles/test_task.dir/__/src/task.c.s
 .PHONY : __/src/task.c.s
 
 test_binarize.o: test_binarize.c.o
@@ -211,7 +238,7 @@ test_binarize.o: test_binarize.c.o
 
 # target to build an object file
 test_binarize.c.o:
-	cd /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/cmake-build-debug && $(MAKE) -f tests/CMakeFiles/test_binarize.dir/build.make tests/CMakeFiles/test_binarize.dir/test_binarize.c.o
+	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_binarize.dir/build.make tests/CMakeFiles/test_binarize.dir/test_binarize.c.o
 .PHONY : test_binarize.c.o
 
 test_binarize.i: test_binarize.c.i
@@ -220,7 +247,7 @@ test_binarize.i: test_binarize.c.i
 
 # target to preprocess a source file
 test_binarize.c.i:
-	cd /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/cmake-build-debug && $(MAKE) -f tests/CMakeFiles/test_binarize.dir/build.make tests/CMakeFiles/test_binarize.dir/test_binarize.c.i
+	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_binarize.dir/build.make tests/CMakeFiles/test_binarize.dir/test_binarize.c.i
 .PHONY : test_binarize.c.i
 
 test_binarize.s: test_binarize.c.s
@@ -229,7 +256,7 @@ test_binarize.s: test_binarize.c.s
 
 # target to generate assembly for a file
 test_binarize.c.s:
-	cd /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/cmake-build-debug && $(MAKE) -f tests/CMakeFiles/test_binarize.dir/build.make tests/CMakeFiles/test_binarize.dir/test_binarize.c.s
+	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_binarize.dir/build.make tests/CMakeFiles/test_binarize.dir/test_binarize.c.s
 .PHONY : test_binarize.c.s
 
 test_task.o: test_task.c.o
@@ -238,7 +265,7 @@ test_task.o: test_task.c.o
 
 # target to build an object file
 test_task.c.o:
-	cd /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/cmake-build-debug && $(MAKE) -f tests/CMakeFiles/test_task.dir/build.make tests/CMakeFiles/test_task.dir/test_task.c.o
+	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_task.dir/build.make tests/CMakeFiles/test_task.dir/test_task.c.o
 .PHONY : test_task.c.o
 
 test_task.i: test_task.c.i
@@ -247,7 +274,7 @@ test_task.i: test_task.c.i
 
 # target to preprocess a source file
 test_task.c.i:
-	cd /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/cmake-build-debug && $(MAKE) -f tests/CMakeFiles/test_task.dir/build.make tests/CMakeFiles/test_task.dir/test_task.c.i
+	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_task.dir/build.make tests/CMakeFiles/test_task.dir/test_task.c.i
 .PHONY : test_task.c.i
 
 test_task.s: test_task.c.s
@@ -256,7 +283,7 @@ test_task.s: test_task.c.s
 
 # target to generate assembly for a file
 test_task.c.s:
-	cd /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/cmake-build-debug && $(MAKE) -f tests/CMakeFiles/test_task.dir/build.make tests/CMakeFiles/test_task.dir/test_task.c.s
+	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_task.dir/build.make tests/CMakeFiles/test_task.dir/test_task.c.s
 .PHONY : test_task.c.s
 
 # Help Target
@@ -273,6 +300,9 @@ help:
 	@echo "... __/src/binarize.o"
 	@echo "... __/src/binarize.i"
 	@echo "... __/src/binarize.s"
+	@echo "... __/src/sykatest.o"
+	@echo "... __/src/sykatest.i"
+	@echo "... __/src/sykatest.s"
 	@echo "... __/src/task.o"
 	@echo "... __/src/task.i"
 	@echo "... __/src/task.s"
@@ -293,6 +323,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /cygdrive/d/Theory/Practice/ANSIC/inno_ansic_spring/assignments/ha-1/template/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug" && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
