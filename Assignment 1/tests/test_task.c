@@ -187,7 +187,75 @@ END_TEST
 
 START_TEST (test_escape)
 {
+	int i = 0;
+    int v = 0;
+    int s = 1;
+    char t [100000];
+    char s1 [] = "hey guys, y menya         vse";
+    char t1 [] = "hey guys, y menya         vse";
+    escape(s1,t);
+    while(t[i] != '\0'){
+        if (t[i] != t1[i]) {
+        v = 7;
+        break;}
+        i++;
+    }
+       ck_assert( 0 == v )
+    char s2 [] = " ";
+    char t2 [] = " ";
+    escape(s2,t);
+    v = 0;
+    while(t[i] != '\0'){
+        if (t[i] != t1[i]) {
+            v = 7;
+            break;}
+        i++;
+    }
+    //ck_assert( 0 == v )
+    char s3 [] = "\ndetka\nti lubish\nrvanie jeans";
+    escape(s3,t);
+    char t3 [] = "\\ndetka\\nti lubish\\nrvanie jeans";
+    v = 0;
+    while(t[i] != '\0'){
+        if (t[i] != t1[i]) {
+            v = 7;
+            break;}
+        i++;
+    }
+   ck_assert( 0 == v )
+    
 
+    char s4 [] = "\tkek\tlol\nlekarstvo";
+    v = 0;
+    while(t[i] != '\0'){
+        if (t[i] != t1[i]) {
+            v = 7;
+            break;}
+        i++;
+    }
+    ck_assert( 0 == v )
+    char t4 [] = "\\tkek\\tlol\\nlekarstvo";
+    escape(s4,t);
+    v = 0;
+    while(t[i] != '\0'){
+        if (t[i] != t1[i]) {
+            v = 7;
+            break;}
+        i++;
+    }
+    ck_assert( 0 == v )
+
+    char s5 [] = "\\n";
+    char t5 [] = "\\n";
+    escape(s5,t);
+    v = 0;
+    while(t[i] != '\0'){
+        if (t[i] != t1[i]) {
+            v = 7;
+            break;}
+        i++;
+    }
+    ck_assert( 0 == v )
 }
 END_TEST
 
