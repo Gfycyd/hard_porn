@@ -130,7 +130,44 @@ END_TEST
 
 START_TEST (test_flush)
 {
+	int s = 1;
+    char output [1000];
 
+    char s1 [] = "\"f\\df//dfsdf\"";
+    char t1 [] =  "\"f\\df//dfsdf\"";
+    int i = 0;
+    int v = 0;
+    while(output[i] != '\0'){
+        if (t1[i] != output[i]) {
+            v = 666;
+            break;}
+        i++;
+    }
+    ck_assert( 0 == v );
+    char s2 [] = "fdfd//fdfd\nffdf";
+    char t2 [] = "fdfd\nffdf";
+    flush(s2,output);
+     i = 0;
+     v = 0;
+    while(output[i] != '\0'){
+        if (t2[i] != output[i]) {
+            v = 666;
+            break;}
+        i++;
+    }
+    ck_assert( 0 == v );
+
+    char s3 [] = "Katya//121212";
+    char t3 [] = "Katya";
+    i = 0;
+    v = 0;
+    while(output[i] != '\0'){
+        if (t2[i] != output[i]) {
+            v = 666;
+            break;}
+        i++;
+    }
+    ck_assert( 0 == v );
 }
 END_TEST
 
