@@ -284,7 +284,71 @@ END_TEST
 
 START_TEST (test_expand)
 {
+	int s = 1;
+    char a1 [] = "f-w";
+    char s1 [] = "fghijklmnopqrstuvw";
+    char t1 [100000];
+    expand(a1,t1);
+    int i = 0;
+    int v = 0;
+    while(t1[i] != '\0'){
+        if (t1[i] != s1[i]) {
+            v = 666;
+            break;}
+        i++;
+    }
+    ck_assert( 0 == v )
+    char a2 [] = "1-17";
+    char s2 [] = "17";
+    expand(a2,t1);
+    i = 0;
+    v = 0;
+    while(t1[i] != '\0'){
+        if (t1[i] != s2[i]) {
+            v = 666;
+            break;}
+        i++;
+    }
+    ck_assert( 0 == v )
+    char a3 [] = "a-b-c";
+    char s3 [] = "abc";
+    expand(a3,t1);
+     i = 0;
+     v = 0;
+    while(t1[i] != '\0'){
+        if (t1[i] != s3[i]) {
+            v = 666;
+            break;}
+        i++;
+    }
+    ck_assert( 0 == v )
 
+    char a4 [] = "-a-b-c9-0-3b-s-";
+    char s4 [] = "abc90123bcdefghijklmnopqrs";
+    expand(a4,t1);
+    i = 0;
+    v = 0;
+    while(t1[i] != '\0'){
+        if (t1[i] != s4[i]) {
+            v = 666;
+            break;}
+        i++;
+    }
+    ck_assert( 0 == v )
+
+    char a5 [] = "a-A-C8-9";
+    char s5 [] = "aABC89";
+    expand(a5,t1);
+    i = 0;
+    v = 0;
+    while(t1[i] != '\0'){
+        if (t1[i] != s4[i]) {
+            v = 666;
+            break;}
+        i++;
+    }
+    printf(t1);
+    ck_assert( 0 == v )
 }
 END_TEST
 
