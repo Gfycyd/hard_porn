@@ -3,6 +3,8 @@
 //
 
 #include <ctype.h>
+#include <stdbool.h>
+#include <string.h>
 #include "task.h"
 
 /** The stub function
@@ -237,36 +239,37 @@ double atofe(const char s[]) {
     return esign == 1 ? mantisa * exp : mantisa / exp; //culculate result
 
 }
-void flush(){
-    int c;
-    while ((c = getchar()) != EOF) {
-        if (c == '"'){
-            putchar(c);
-            c = getchar();
-            putchar(c);
-            while(c != '"') {
-                c = getchar();
-                putchar(c);
-            }
-        }
-        else if (c == '/'){
-             int d = getchar();
-            if (d == '/') {
-                while (d != '\n')
-                d = getchar();
-                putchar(d);
-            }
-
-            else if ( d == '*'){
-                while ( d != '/' || c != '*'){
-                    c = d;
-                    d = getchar();                }
-            }
-            else putchar(c);
-        }
-        else putchar(c);
-    }
-}
+//KATYKHA EBASH
+//void flush(){
+//    int c;
+//    while ((c = getchar()) != EOF) {
+//        if (c == '"'){
+//            putchar(c);
+//            c = getchar();
+//            putchar(c);
+//            while(c != '"') {
+//                c = getchar();
+//                putchar(c);
+//            }
+//        }
+//        else if (c == '/'){
+//             int d = getchar();
+//            if (d == '/') {
+//                while (d != '\n')
+//                d = getchar();
+//                putchar(d);
+//            }
+//
+//            else if ( d == '*'){
+//                while ( d != '/' || c != '*'){
+//                    c = d;
+//                    d = getchar();                }
+//            }
+//            else putchar(c);
+//        }
+//        else putchar(c);
+//    }
+//}
 char *itoa(int n, char s[], int w){
 void reverse(char s[]);
 
@@ -286,6 +289,7 @@ s[i] = '\0';
 reverse(s);
 return s;
 }
+//KATYKHA EBASH(2)
 void reverse(char s[])
 {
     int i,j,c;
@@ -357,5 +361,43 @@ char *escape(const char from[], char to[]){
 }
 
 char *expand(const char s1[],  char s2[]){
+}
+
+
+
+
+unsigned setbits(unsigned x, int p, int n, unsigned y){
+    unsigned z = 0;
+    if (n>p) n=p;
+    unsigned result = ~(((~((~z)<<n))&(~y))<<(p-n))&x;
+    return result;
+}
+
+char* squeeze(const char s1[], const char s2[])
+{
+    int i, j, k;
+    char* s = (char*) s1;
+    bool exist;
+    for (i = j = 0; s[i] != '\0'; i++) {
+        exist = false;
+        for (k = 0; s2[k] != '\0'; k++)
+            if (s1[i] == s2[k]) {
+                exist = true;
+                break;
+            }
+        if (!exist)
+            s[j++] = s[i];
+    }
+    s[i] = '\0';
+    return s;
+}
+
+int any(const char s1[], const char s2[]) {
+    int i, k;
+    for (i = 0; s1[i] != '\0'; i++) {
+        for (k = 0; s2[k] != '\0'; k++)
+            if (s1[i] == s2[k]) return i;
+    }
+    return -1;
 }
 /** GET FROM task.h */

@@ -150,21 +150,44 @@ START_TEST (test_htoi)
 END_TEST
 
 START_TEST (test_squeeze)
-{
+    {
+        const char s1[] = "v otvetax ya ograni4en";
+        const char s2[] = "a vot eto pravilnii vopros";
 
-}
+        char* pattern = "xygr4";
+        int k = 1;
+        char* output = squeeze(s1,s2);
+        printf("%s", pattern);
+        COMPARATOR(k,output,pattern);
+        ck_assert(k==1);
+    }
 END_TEST
 
 START_TEST (test_any)
-{
+    {
+        const char s1[] = "asd";
+        const char s2[] = "";
 
-}
+        int output = any(s1,s2);
+        int pattern = -1;
+
+        ck_assert(output==pattern);
+    }
 END_TEST
 
 START_TEST (test_setbits)
-{
+    {
+        unsigned x = 31;
+        int p = 3;
+        int n = 2;
+        unsigned y = 1;
 
-}
+        const unsigned pattern = 27;
+        const unsigned output = setbits(x,p,n,y);
+
+        ck_assert(pattern==output);
+
+    }
 END_TEST
 
 START_TEST (test_binsearch)
@@ -200,7 +223,7 @@ START_TEST (test_escape)
         break;}
         i++;
     }
-       ck_assert( 0 == v )
+       ck_assert( 0 == v );
     char s2 [] = " ";
     char t2 [] = " ";
     escape(s2,t);
@@ -222,7 +245,7 @@ START_TEST (test_escape)
             break;}
         i++;
     }
-   ck_assert( 0 == v )
+   ck_assert( 0 == v );
     
 
     char s4 [] = "\tkek\tlol\nlekarstvo";
@@ -233,7 +256,7 @@ START_TEST (test_escape)
             break;}
         i++;
     }
-    ck_assert( 0 == v )
+    ck_assert( 0 == v );
     char t4 [] = "\\tkek\\tlol\\nlekarstvo";
     escape(s4,t);
     v = 0;
@@ -243,7 +266,7 @@ START_TEST (test_escape)
             break;}
         i++;
     }
-    ck_assert( 0 == v )
+    ck_assert( 0 == v );
 
     char s5 [] = "\\n";
     char t5 [] = "\\n";
@@ -255,7 +278,7 @@ START_TEST (test_escape)
             break;}
         i++;
     }
-    ck_assert( 0 == v )
+    ck_assert( 0 == v );
 }
 END_TEST
 
