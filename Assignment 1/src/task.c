@@ -282,7 +282,7 @@ if (sign <0)
 s[i++] = '-';
 while(i<w)
 s[i++]=' ';
-s[w] = '\0';
+s[i] = '\0';
 reverse(s);
 return s;
 }
