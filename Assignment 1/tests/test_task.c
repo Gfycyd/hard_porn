@@ -169,7 +169,19 @@ END_TEST
 
 START_TEST (test_binsearch)
 {
-
+	int x = 7;
+    int n = 5;
+    int v [] = {1,4,5,6,7};
+    int  k = binsearch(x,v,n);
+     x = 2;
+     n = 5;
+    int v2 [] = {1,4,5,6,7};
+    k = k * binsearch(x,v2,n);
+     x = 7;
+     n = 5;
+     int v3 [] = {1,7,5,6,7};
+     k = k * binsearch(x,v3,n);
+	ck_assert(-16 == k) 
 }
 END_TEST
 
