@@ -293,7 +293,30 @@ void reverse(char s[])
     for(i=0,j=strlen(s)-1;i<j;i++,j--)
         c=s[i],s[i]=s[j],s[j]=c;
 }
-char *itob(int n, const char s[], int b){
+char *itob(int n, char s[], int b){
+    void reverse(char s[]);
+    int i = 0;
+    int sign;
+    if ((sign = n) <0)
+        n = - n;
+    while (n>0){
+        int j = n % b;
+        if (j<=9) {
+            s[i++] = j + '0';
+        }
+        else
+            s[i++] = j + 'a' - 10;
+        n = n / b;
+    }
+    if (sign < 0) {
+        s[i++] = '-';
+    }
+    if ( i > 0) {
+        s[i] = '\0';
+        reverse(s);
+    }
+    else s[i] = '0';
+    s[++i] = '\0';
 }
 int binsearch( int x, int v[], int n){
     int low, high, mid;
