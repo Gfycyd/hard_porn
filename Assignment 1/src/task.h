@@ -92,7 +92,7 @@ char *entab(const char input[]);
 
 char *enter(int n, const char input[]);
 
-char *flush(const char input[], char output []){
+char *flush(const char input[], char output []);
 
 int htoi(const char s[]);
 
