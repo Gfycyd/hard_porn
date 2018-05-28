@@ -336,4 +336,26 @@ int binsearch( int x, int v[], int n){
     }
     else return -1; /* no match */
 }
+char *escape(const char from[], char to[]){
+    int i = 0;
+    int count = 0;
+    for ( i = 0; i<strlen(from); i++){
+        switch (from[i]) {
+            case '\n':to[count++] = '\\';
+                to[count++] = 'n';
+                break;
+            case '\t':to[count++] = '\\';
+                    to[count++] = 't';
+                break;
+            default:
+                to[count++] = from[i];
+                break;
+        }
+
+    }
+    to[count] = '\0';
+}
+
+char *expand(const char s1[],  char s2[]){
+}
 /** GET FROM task.h */
