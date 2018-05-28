@@ -108,7 +108,7 @@ char *escape(const char from[], const char to[]);
 
 char *expand(const char s1[], const char s2[]);
 
-char *itoa(int n, char s[]);
+char *itoa(int n, char s[],int b);
 
 char *itob(int n, char s[], int b);
 
