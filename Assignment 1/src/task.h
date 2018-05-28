@@ -104,9 +104,9 @@ unsigned setbits(unsigned x, int p, int n, unsigned y);
 
 int binsearch(int x, int v[], int n);
 
-char *escape(const char from[], const char to[]);
+char *escape(const char from[], char to[]);
 
-char *expand(const char s1[], const char s2[]);
+char *expand(const char s1[], char s2[]);
 
 char *itoa(int n, char s[],int b);
 
