@@ -1,5 +1,5 @@
 # ANSI C
-## TEAM HARD PORN
+## TEAM Hard Porn
 * Kostenko Nikita
 * Uzbekova Katya
 * Kivotova Evgeniia
