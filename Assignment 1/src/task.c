@@ -129,7 +129,7 @@ char *enter(int n, const char input[]) {
     return output;
 
 }
-char *flush(const char input[], char output []){
+char *flush(const char input[]){
     int i = 0;
     int count = 0;
     while (input[i] != '\0' ) {
