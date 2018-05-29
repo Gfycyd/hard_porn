@@ -348,7 +348,7 @@ int binsearch( int x, int v[], int n){
     else return -1; /* no match */
 }
 char *escape(const char from[], char to[]){
-    int i = 0;
+   int i = 0;
     int count = 0;
     for ( i = 0; i<strlen(from); i++){
         switch (from[i]) {
