@@ -176,14 +176,34 @@ END_TEST
 
 START_TEST (test_squeeze)
     {
+        /** тест с большими строчками, строчка-удалитель больше исходной */
         const char s1[] = "v otvetax ya ograni4en";
         const char s2[] = "a vot eto pravilnii vopros";
-
         char* pattern = "xygr4";
         int k = 1;
         char* output = squeeze(s1,s2);
-        printf("%s\n", output);
         COMPARATOR(k,output,pattern);
+        ck_assert(k==1);
+/** Большие и маленькие буквы с цифрами*/
+        const char name1[] = "NiKita3";
+        const char remover1[] = "Rinat3";
+        pattern = "NK";
+        output = squeeze(name1, remover1);
+        COMPARATOR(k,output,pattern);
+        ck_assert(k==1);
+/** Попробуем удалить пустой символ */
+        const char name2[] = "Kate";
+        const char remover2[] = "";
+        pattern = "Kate";
+        output = squeeze(name2, remover2);
+        COMPARATOR(k, output, pattern);
+        ck_assert(k==1);
+/** Исходная строка пустая */
+        char name3[] = "";
+        char remover3[] = "Evgeniia";
+        pattern = "";
+        output = squeeze(name3, remover3);
+        COMPARATOR(k, output, pattern);
         ck_assert(k==1);
     }
 END_TEST
@@ -195,6 +215,26 @@ START_TEST (test_any)
 
         int output = any(s1,s2);
         int pattern = -1;
+
+        ck_assert(output==pattern);
+
+
+
+        const char s3[] = "asd";
+        const char s4[] = "dsa";
+
+        output = any(s3,s4);
+        pattern = 0;
+
+        ck_assert(output==pattern);
+
+
+
+        const char s5[] = "asd";
+        const char s6[] = "d";
+
+        output = any(s5,s6);
+        pattern = 2;
 
         ck_assert(output==pattern);
     }
@@ -211,6 +251,30 @@ START_TEST (test_setbits)
         const unsigned output = setbits(x,p,n,y);
 
         ck_assert(pattern==output);
+
+
+
+        x = 63;
+        p = 3;
+        n = 2;
+        y = 1;
+
+        const unsigned pattern1 = 59;
+        const unsigned output1 = setbits(x,p,n,y);
+
+        ck_assert(pattern1==output1);
+
+
+        x = 256;
+        p = 3;
+        n = 3;
+        y = 7;
+
+        const unsigned pattern2 = 59;
+        const unsigned output2 = setbits(x,p,n,y);
+        printf("%d\n",output2);
+
+        ck_assert(pattern2==output2);
 
     }
 END_TEST
@@ -251,7 +315,7 @@ START_TEST (test_escape)
     v = 1;
     COMPARATOR(v,t,t2);
     //printf("%d",v);
-    ck_assert( 1 == v )
+    ck_assert( 1 == v );
     char s3 [] = "\ndetka\nti lubish\nrvanie jeans";
     escape(s3,t);
     char t3 [] = "\\ndetka\\nti lubish\\nrvanie jeans";
@@ -477,7 +541,7 @@ Suite* str_suite (void) {
 	Suite *suite = suite_create("Home assignment 1");
 	TCase *tcase = tcase_create("case");
 
-/*	tcase_add_test(tcase, test_stub);
+	tcase_add_test(tcase, test_stub);
 	tcase_add_test(tcase, test_array_changer);
 
 	tcase_add_test(tcase, test_detab);
@@ -494,10 +558,9 @@ Suite* str_suite (void) {
 	tcase_add_test(tcase, test_itoa);
 	tcase_add_test(tcase, test_itob);
 	tcase_add_test(tcase, test_strrindex);
-	tcase_add_test(tcase, test_atofe);*/
+	tcase_add_test(tcase, test_atofe);
 
 
-    tcase_add_test(tcase, test_squeeze);
 	/** YOUT TEST CASES HERE */
 
 	suite_add_tcase(suite, tcase);

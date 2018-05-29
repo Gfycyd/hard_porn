@@ -75,6 +75,7 @@ char *detab(const char input[]) {
     return output;
 }
 
+
 char *entab(const char input[]) {
     int i = 0, counter = 0, j = 0, k = 0;
     SPACE_TO_TAB_COUNTER(counter, input);   //define number of tabs to be inserted
