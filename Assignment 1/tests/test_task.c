@@ -179,7 +179,7 @@ START_TEST (test_squeeze)
         /** тест с большими строчками, строчка-удалитель больше исходной */
         const char s1[] = "v otvetax ya ograni4en";
         const char s2[] = "a vot eto pravilnii vopros";
-        char* pattern = "xygr4";
+        char* pattern = "xyg4";
         int k = 1;
         char* output = squeeze(s1,s2);
         COMPARATOR(k,output,pattern);
@@ -266,13 +266,12 @@ START_TEST (test_setbits)
 
 
         x = 256;
-        p = 3;
+        p = 4;
         n = 3;
         y = 7;
 
-        const unsigned pattern2 = 59;
+        const unsigned pattern2 = 270;
         const unsigned output2 = setbits(x,p,n,y);
-        printf("%d\n",output2);
 
         ck_assert(pattern2==output2);
 
@@ -284,7 +283,7 @@ START_TEST (test_binsearch)
     int n = 5;
     int v [] = {1,4,5,6,7};
     int  k = binsearch(x,v,n);
-    ck_assert( k == 4)
+    ck_assert( k == 4);
 
     x = 7;
     n = 4;
@@ -359,6 +358,7 @@ START_TEST (test_expand)
     COMPARATOR(v,t1,s1);
     //printf("%d",v);
     ck_assert( 1 == v );
+
     char a2 [] = "1-17";
     char s2 [] = "17";
     expand(a2,t1);

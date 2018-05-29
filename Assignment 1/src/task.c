@@ -388,9 +388,9 @@ char *expand(const char s1[],  char s2[]){
 
 
 unsigned setbits(unsigned x, int p, int n, unsigned y){
-    unsigned z = 0;
     if (n>p) n=p;
-    unsigned result = ~(((~((~z)<<n))&(~y))<<(p-n))&x;
+    unsigned z = (~((~0)<<n))<<(p-n);
+    unsigned result = x&(~z)|(z&(y<<p-n));
     return result;
 }
 
