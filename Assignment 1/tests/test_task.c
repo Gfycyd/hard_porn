@@ -379,45 +379,30 @@ END_TEST
 
 START_TEST (test_itoa)
 {
- int i;
-    //test_one_three();
     int n = -400;
     int w = 10;
     char s [10000];
     itoa(n,s,w);
     char t [] = "      -400";
-    i = 0;
     int v = 1;
-   while (s[i] != '\0') {
-       if (t[i] != s[i]) {
-           v = 0;
-       }
-       ++i;
-   }
+    COMPARATOR(v,s,t);
+    ck_assert( 1 == v );
      n = -4;
      w = 3;
      char s2 [10000];
     itoa(n,s2,w);
     char t2 [] = " -4";
-    i = 0;
-    while (s2[i] != '\0') {
-        if (t2[i] != s2[i]) {
-            v = 0;
-        }
-        ++i;
-    }
+	v = 1;
+    COMPARATOR(v,s2,t2);
+    ck_assert( 1 == v );
     n = 100;
     w = 2;
     char s3 [10000];
     itoa(n,s3,w);
     char t3 [] = "100";
-    i = 0;
-    while (s3[i] != '\0') {
-        if (t3[i] != s3[i]) {
-            v = 0;
-        }
-        ++i;
-    }
+	v = 1;
+    COMPARATOR(v,s3,t3);
+    ck_assert( 1 == v );
 	ck_assert(v == 1);
 }
 END_TEST
