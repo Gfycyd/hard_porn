@@ -106,7 +106,7 @@ int binsearch(int x, int v[], int n);
 
 char *escape(const char from[], char to[]);
 
-char *expand(const char s1[], char s2[]);
+char *expand(const char s1[]);
 
 char *itoa(int n, char s[],int b);
 
