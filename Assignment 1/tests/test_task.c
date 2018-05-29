@@ -351,7 +351,6 @@ START_TEST (test_expand)
     COMPARATOR(v,expand(s5),s5);
     //printf("%d",v);
     ck_assert( 1 == v );
-    return 0;
 }
 END_TEST
 
