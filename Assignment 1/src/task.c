@@ -375,7 +375,11 @@ char *escape(const char from[], char to[]){
     to[count] = '\0';
 }
 
-char *expand(const char s1[],  char s2[]){
+char *expand(const char *s1){
+    int length = 0;
+    STRING_LEN(length, s1);
+
+    char *s2 = ALLOCATE(length);
     int i = 0;
     int j = 0;
     while(s1[i] != '\0') {
@@ -391,9 +395,6 @@ char *expand(const char s1[],  char s2[]){
     }
     s2[j]='\0';
 }
-
-
-
 
 unsigned setbits(unsigned x, int p, int n, unsigned y){
     if (n>p) n=p;
