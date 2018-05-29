@@ -280,20 +280,24 @@ START_TEST (test_setbits)
 END_TEST
 
 START_TEST (test_binsearch)
-{
-	int x = 7;
+{int x = 7;
     int n = 5;
     int v [] = {1,4,5,6,7};
     int  k = binsearch(x,v,n);
-     x = 2;
-     n = 5;
-    int v2 [] = {1,4,5,6,7};
-    k = k * binsearch(x,v2,n);
-     x = 7;
-     n = 5;
-     int v3 [] = {1,7,5,6,7};
-     k = k * binsearch(x,v3,n);
-	ck_assert(-16 == k) ;
+    ck_assert( k == 4)
+
+    x = 7;
+    n = 4;
+    int v3 [] = {0,40,60,70};
+    k = binsearch(x,v3,n);
+    ck_assert(-1 == k) ;
+
+    x = 6;
+    n = 10;
+    int v4 [] = {0,1,2,3,4,5,6,6,6,6,9};
+    k = binsearch(x,v4,n);
+
+    ck_assert(7 == k) ;
 }
 END_TEST
 
