@@ -276,43 +276,6 @@ double atofe(const char s[]) {
     return esign == 1 ? mantisa * exp : mantisa / exp; //culculate result
 
 }
-char *flush(const char input[], char output []){
-    int i = 0;
-    int count = 0;
-    while (input[i] != '\0' ) {
-        if (input[i] == '"'){
-            output[count ++] = '"';
-            ++i;
-            output[count++] = input[i];
-            while(input[i] != '"') {
-                ++i;
-                output[count++] = input[i];
-            }
-        }
-        else if (input[i] == '/'){
-            ++i;
-            if (input[i] == '/') {
-                while (input[i] != '\n' && input[i] != '\0')
-                    ++i;
-                if (input[i] == '\n') output[count] = input[i];
-                count++;
-            }
-
-            else if ( input[i] == '*'){
-                ++i;
-                while ( input[i+1] != '/' || input[i] != '*'){
-
-                    ++i;               }
-            }
-            else output[count++] = input[i];
-        }
-        else {
-            output[count++] = input[i];
-        }
-        i = i + 1;
-    }
-    output[count] = '\0';
-}
 char *itoa(int n, char s[], int w){
 void reverse(char s[]);
 
