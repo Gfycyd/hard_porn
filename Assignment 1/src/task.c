@@ -130,6 +130,10 @@ char *enter(int n, const char input[]) {
 
 }
 char *flush(const char input[]){
+    int a = 0;
+    STRING_LEN(a, input);
+
+    char *output = ALLOCATE(a);
     int i = 0;
     int count = 0;
     while (input[i] != '\0' ) {
@@ -148,7 +152,7 @@ char *flush(const char input[]){
                 while (input[i] != '\n' && input[i] != '\0')
                     ++i;
                 if (input[i] == '\n') {output[count] = input[i];
-                count++; } else {
+                    count++; } else {
                     output[count] = '\0'; break;}
             }
 
@@ -166,6 +170,7 @@ char *flush(const char input[]){
         i = i + 1;
     }
     output[count] = '\0';
+    return output;  
 }
 
 int htoi(const char input[]) {
