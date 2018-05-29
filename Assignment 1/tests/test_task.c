@@ -280,46 +280,36 @@ START_TEST (test_binsearch)
 END_TEST
 
 START_TEST (test_escape)
-{int i = 0;
-    int v = 0;
-    int s = 1;
-    char t [100000];
+{
+	int v = 0;
     char s1 [] = "hey guys, y menya         vse";
     char t1 [] = "hey guys, y menya         vse";
-    escape(s1,t);
     v = 1;
-    COMPARATOR(v,t,t1);
+    COMPARATOR(v,escape(s1),t1);
     //printf("%d",v);
     ck_assert( 1 == v );
     char s2 [] = " ";
     char t2 [] = " ";
-    escape(s2,t);
     v = 1;
-    COMPARATOR(v,t,t2);
+    COMPARATOR(v,escape(s2),t2);
     //printf("%d",v);
     ck_assert( 1 == v );
     char s3 [] = "\ndetka\nti lubish\nrvanie jeans";
-    escape(s3,t);
     char t3 [] = "\\ndetka\\nti lubish\\nrvanie jeans";
     v = 1;
-    COMPARATOR(v,t,t3);
+    COMPARATOR(v,escape(s3),t3);
     //printf("%d",v);
     ck_assert( 1 == v );
-
-
     char s4 [] = "\tkek\tlol\nlekarstvo";
     char t4 [] = "\\tkek\\tlol\\nlekarstvo";
-    escape(s4,t);
     v = 1;
-    COMPARATOR(v,t,t4);
+    COMPARATOR(v,escape(s4),t4);
     //printf("%d",v);
     ck_assert( 1 == v );
-
     char s5 [] = "\\n";
     char t5 [] = "\\n";
-    escape(s5,t);
     v = 1;
-    COMPARATOR(v,t,t5);
+    COMPARATOR(v,escape(s5),t5);
     //printf("%d",v);
     ck_assert( 1 == v );
 }
@@ -331,38 +321,36 @@ START_TEST (test_expand)
     char s1 [] = "fghijklmnopqrstuvw";
     int v = 1;
     COMPARATOR(v,expand(a1),s1);
-    printf("%d",v);
-    //ck_assert( 1 == v );
+    //printf("%d",v);
+    ck_assert( 1 == v );
     char a2 [] = "1-17";
     char s2 [] = "17";
     expand(a2);
     v = 1;
     COMPARATOR(v,expand(a2),s2);
-    printf("%d",v);
-    //ck_assert( 1 == v );
+    //printf("%d",v);
+    ck_assert( 1 == v );
     char a3 [] = "a-b-c";
     char s3 [] = "abc";
     expand(a3);
     v = 1;
     COMPARATOR(v,expand(s3),s3);
-    printf("%d",v);
-    //ck_assert( 1 == v );
-
+    //printf("%d",v);
+    ck_assert( 1 == v );
     char a4 [] = "-a-b-c9-0-3b-s-";
     char s4 [] = "abc90123bcdefghijklmnopqrs";
     expand(a4);
     v = 1;
     COMPARATOR(v,expand(s4),s4);
-    printf("%d",v);
-    //ck_assert( 1 == v );
-
-    char a5 [] = "a-A-C8-9";
+    //printf("%d",v);
+    ck_assert( 1 == v );
+	char a5 [] = "a-A-C8-9";
     char s5 [] = "aABC89";
     expand(a5);
     v = 1;
     COMPARATOR(v,expand(s5),s5);
-    printf("%d",v);
-    //ck_assert( 1 == v );
+    //printf("%d",v);
+    ck_assert( 1 == v );
     return 0;
 }
 END_TEST
