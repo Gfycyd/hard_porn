@@ -340,7 +340,6 @@ START_TEST (test_escape)
     COMPARATOR(v,t,t5);
     //printf("%d",v);
     ck_assert( 1 == v );
-    return 0;
 }
 END_TEST
 
