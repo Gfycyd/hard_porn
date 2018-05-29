@@ -52,26 +52,27 @@ char *array_changer(const char c[]) {
 }
 
 /** YOUR SOLUTIONS */
-
-char *detab(const char input[]) {
-    int i = 0, counter = 0, j = 0;
+char* detab(const char input[]) {
+    int i = 0, counter = 0, j = 0, temp = 0;
     STRING_LEN(i, input);               //i = length of string
-    NUMBER_OF(counter, '\t', input);     //counter = number of tabs in sequence
-    char *output = ALLOCATE(i + counter);
+    NUMBER_OF(counter, '\t', input);//counter = number of tabs in sequence
 
+    char* output = ALLOCATE(i +3*counter);
     counter = 0;
-    for (; j < i;) {
-        if (input[j] == '\t')                     //if tab is found
+    for (; j < i;j++) {
+        if (input[j] == '\t')                       //if tab is found
         {
             for (int k = 0; k < 4; k++) {            //place 4 spaces
                 output[j + 3 * counter + k] = ' ';
             }
-            counter++;                           //increase counter
+            counter++;                               //increase counter
         } else
             output[j + 3 * counter] = input[j];      //else just copy from input
-        j++;
-    }
 
+        STRING_LEN(temp, output);
+
+    }
+    output[j+counter*3] = '\0';
     return output;
 }
 
@@ -102,6 +103,7 @@ char *entab(const char input[]) {
         }
         j++;
     }
+    output[k] = '\0';
     return output;
 
 }
@@ -123,6 +125,7 @@ char *enter(int n, const char input[]) {
         }
 
     }
+    output[j + enter_counter] = '\0';
     return output;
 
 }

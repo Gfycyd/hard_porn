@@ -49,83 +49,65 @@ END_TEST
  * */
 
 START_TEST (test_detab)
-{
-	const char input[] = "abc\tb\ta";
-	const char pattern[] = "abc    b    a";
+    {
+        /** change '\t' to '    ' */
 
-	/** change '\t' to '    ' */
+        const char input1[] = "\t";
+        const char pattern1[] = "    ";
+        char* output = detab(input1);
+        int k = 1;
+        COMPARATOR(k, output, pattern1);
+        /** check statement is true */
+        ck_assert(1 == k);
 
-	char* output = detab(input);
+        const char input2[] = "\tc\t";
+        const char pattern2[] = "    c    ";
+        char* output2 = detab(input2);
+        k = 1;
+        COMPARATOR(k, output2, pattern2);
+        /** check statement is true */
+        ck_assert(1 == k);
 
-	/** initialise k because ck_assert need's it to be sure
-	 *  that he compare something initialised with 1
-	 *  because if COMPARATOR will not change it value, k will not have any value
-	 *  */
-	int k = 1;
-
-	/** get k, k, output, pattern
-	 *  compare output array with pattern array by elements
-	 *  return 0 if they are not equal
-	 * */
-	COMPARATOR(k, output, pattern);
-
-	/** check statement is true */
-	ck_assert(1 == k);
-}
+        const char input3[] = "\tddddfffd\t\tc\t";
+        const char pattern3[] = "    ddddfffd        c    ";
+        char* output3 = detab(input3);
+        k = 1;
+        COMPARATOR(k, output3, pattern3);
+        /** check statement is true */
+        ck_assert(1 == k);
+    }
 END_TEST
 
 START_TEST (test_entab)
-		{
-			const char input[] = "abc      b\ta   t         ";
-			const char pattern[] = "abc\t  b\ta   t\t\t ";
-
-			/** change '    ' to '\t' */
-
-			char* output = entab(input);
-
-			/** initialise k because ck_assert need's it to be sure
-             *  that he compare something initialised with 1
-             *  because if COMPARATOR will not change it value, k will not have any value
-             *  */
-			int k = 1;
-
-			/** get k, k, output, pattern
-             *  compare output array with pattern array by elements
-             *  return 0 if they are not equal
-             * */
-			COMPARATOR(k, output, pattern);
-
-			/** check statement is true */
-			ck_assert(1 == k);
-}
+    {   /** change '    ' to '\t' */
+        const char input[] = "    abc      b\ta   t         ";
+        const char pattern[] = "\tabc\t  b\ta   t\t\t ";
+        char* output = entab(input);
+        int k = 1;
+        COMPARATOR(k, output, pattern);
+        ck_assert(1 == k);
+    }
 END_TEST
 
 START_TEST (test_enter)
-	{
-		int n = 5;
-		const char input[] = "adgfghdhdggfhdh";
-		const char pattern[] = "adgfg\nhdhdg\ngfhdh";
+    {
+        int n = 5;
+        const char input1[] = "adgfghdhdggfhdh";
+        const char pattern1[] = "adgfg\nhdhdg\ngfhdh";
+        char* output1 = enter(n, input1);
+        int k = 1;
+        COMPARATOR(k, output1, pattern1);
+        ck_assert(1 == k);
 
-		/** insert \n to fit limit of n */
+        n = 7;
+        const char input2[] = "adgfghdhdggfhdh";
+        const char pattern2[] = "adgfghd\nhdggfhd\nh";
+        char* output2 = enter(n, input2);
+        k = 1;
+        COMPARATOR(k, output2, pattern2);
+        ck_assert(1 == k);
 
-		char* output = enter(n, input);
-
-		/** initialise k because ck_assert need's it to be sure
-         *  that he compare something initialised with 1
-         *  because if COMPARATOR will not change it value, k will not have any value
-         *  */
-		int k = 1;
-
-		/** get k, k, output, pattern
-         *  compare output array with pattern array by elements
-         *  return 0 if they are not equal
-         * */
-		COMPARATOR(k, output, pattern);
-
-		/** check statement is true */
-
-		ck_assert(1 == k);
-}
+    }
 END_TEST
 
 START_TEST (test_flush)
@@ -159,20 +141,23 @@ START_TEST (test_flush)
 }
 END_TEST
 
+
 START_TEST (test_htoi)
-{
-	const char input[] = "0xAb1";
-	int  pattern = 2737;
+    {
+        /** insert \n to fit limit of n */
+        const char input1[] = "0xAb1";
+        int  pattern = 2737;
+        int output = htoi(input1);
+        ck_assert(output == pattern);
 
-	/** insert \n to fit limit of n */
+        const char input2[] = "0xAb1r";
+        pattern = -1;
+        output = htoi(input2);
+        ck_assert(output == pattern);
 
-	int output = htoi(input);
-
-	/** check statement is true */
-
-	ck_assert(output == pattern);
-}
+    }
 END_TEST
+
 
 START_TEST (test_squeeze)
     {
@@ -508,13 +493,7 @@ START_TEST (test_strrindex)
 	const char s[] = "aaabbabba";
 	const char t[] = "abba";
 	int  pattern = 5;
-
-	/** insert \n to fit limit of n */
-
 	int output = strrindex(s,t);
-
-	/** check statement is true */
-
 	ck_assert(output == pattern);
 }
 END_TEST
