@@ -7,7 +7,7 @@ include_directories(${CHECK_INCLUDE_DIRS})
 
 include_directories(. ../src)
 
-add_executable(test_binarize test_binarize.c ../src/binarize.c ../src/sykatest.c ../src/sykatest.h)
+add_executable(test_binarize test_binarize.c ../src/binarize.c)
 add_executable(test_task test_task.c ../src/task.c)
 
 target_link_libraries(test_binarize ${CHECK_LIBRARIES} ${CMAKE_THREAD_LIBS_INIT})
