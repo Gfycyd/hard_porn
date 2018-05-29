@@ -356,7 +356,11 @@ int binsearch( int x, int v[], int n){
     else return -1; /* no match */
 }
 char *escape(const char from[], char to[]){
-   int i = 0;
+    int length = 0;
+    STRING_LEN(length, from);
+
+    char *to = ALLOCATE(length);
+    int i = 0;
     int count = 0;
     for ( i = 0; i<strlen(from); i++){
         switch (from[i]) {
@@ -373,6 +377,7 @@ char *escape(const char from[], char to[]){
 
     }
     to[count] = '\0';
+    return to;
 }
 
 char *expand(const char *s1){
