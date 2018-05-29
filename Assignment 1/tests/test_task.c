@@ -118,14 +118,12 @@ START_TEST (test_flush)
 
     char s1 [] = "\"f\\df//dfsdf\"";
     char t1 [] =  "\"f\\df//dfsdf\"";
-    flush(s1,output);
-    COMPARATOR(v,output,t1);
+    COMPARATOR(v,flush(s1),t1);
     //printf("%d", v);
     ck_assert( 1 == v );
     char s2 [] = "fdfd//fdfd\nffdf";
     char t2 [] = "fdfd\nffdf";
-    flush(s2,output);
-    COMPARATOR(v,output,t2);
+    COMPARATOR(v,flush(s2),t2);
 
     v = 1;
     //printf("%d",v);
@@ -134,8 +132,7 @@ START_TEST (test_flush)
     char s3 [] = "Katya//121212";
     char t3 [] = "Katya";
     v = 1;
-    flush(s3,output);
-    COMPARATOR(v,output,t3);
+    COMPARATOR(v,flush(s3),t3);
     ck_assert( 1 == v );
 //    printf("%d",v);
 }
