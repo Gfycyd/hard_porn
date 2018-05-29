@@ -1,2 +1,7 @@
-# hard_porn
-#### Hello, there are we. Evgeniia and Katukha and Nikita
+# ANSI C
+## TEAM HARD PORN
+#### * Kostenko Nikita
+#### * Uzbekova Katya
+#### * Kivotova Evgeniia
+#### * Rinat Mullakhmetov
+
