@@ -345,7 +345,7 @@ END_TEST
 
 START_TEST (test_expand)
 {
-	
+
     int s = 1;
     char a1 [] = "f-w";
     char s1 [] = "fghijklmnopqrstuvw";
@@ -354,21 +354,21 @@ START_TEST (test_expand)
     int v = 1;
     COMPARATOR(v,t1,s1);
     //printf("%d",v);
-    ck_assert( 0 == v );
+    ck_assert( 1 == v );
     char a2 [] = "1-17";
     char s2 [] = "17";
     expand(a2,t1);
     v = 1;
     COMPARATOR(v,t1,s2);
     //printf("%d",v);
-    ck_assert( 0 == v );
+    ck_assert( 1 == v );
     char a3 [] = "a-b-c";
     char s3 [] = "abc";
     expand(a3,t1);
     v = 1;
     COMPARATOR(v,t1,s3);
     //printf("%d",v);
-    ck_assert( 0 == v );
+    ck_assert( 1 == v );
 
     char a4 [] = "-a-b-c9-0-3b-s-";
     char s4 [] = "abc90123bcdefghijklmnopqrs";
@@ -376,7 +376,7 @@ START_TEST (test_expand)
     v = 1;
     COMPARATOR(v,t1,s4);
     //printf("%d",v);
-    ck_assert( 0 == v );
+    ck_assert( 1 == v );
 
     char a5 [] = "a-A-C8-9";
     char s5 [] = "aABC89";
@@ -384,7 +384,7 @@ START_TEST (test_expand)
     v = 1;
     COMPARATOR(v,t1,s5);
     //printf("%d",v);
-    ck_assert( 0 == v );
+    ck_assert( 1 == v );
 }
 END_TEST
 
