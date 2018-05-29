@@ -194,7 +194,7 @@ START_TEST (test_squeeze)
         char* pattern = "xygr4";
         int k = 1;
         char* output = squeeze(s1,s2);
-        printf("%s", pattern);
+        printf("%s\n", output);
         COMPARATOR(k,output,pattern);
         ck_assert(k==1);
     }
@@ -334,7 +334,7 @@ START_TEST (test_expand)
             break;}
         i++;
     }
-    ck_assert( 0 == v )
+    ck_assert( 0 == v );
     char a2 [] = "1-17";
     char s2 [] = "17";
     expand(a2,t1);
@@ -346,7 +346,7 @@ START_TEST (test_expand)
             break;}
         i++;
     }
-    ck_assert( 0 == v )
+    ck_assert( 0 == v );
     char a3 [] = "a-b-c";
     char s3 [] = "abc";
     expand(a3,t1);
@@ -358,7 +358,7 @@ START_TEST (test_expand)
             break;}
         i++;
     }
-    ck_assert( 0 == v )
+    ck_assert( 0 == v );
 
     char a4 [] = "-a-b-c9-0-3b-s-";
     char s4 [] = "abc90123bcdefghijklmnopqrs";
@@ -371,7 +371,7 @@ START_TEST (test_expand)
             break;}
         i++;
     }
-    ck_assert( 0 == v )
+    ck_assert( 0 == v );
 
     char a5 [] = "a-A-C8-9";
     char s5 [] = "aABC89";
@@ -385,7 +385,7 @@ START_TEST (test_expand)
         i++;
     }
     printf(t1);
-    ck_assert( 0 == v )
+    ck_assert( 0 == v );
 }
 END_TEST
 
@@ -541,7 +541,7 @@ Suite* str_suite (void) {
 	Suite *suite = suite_create("Home assignment 1");
 	TCase *tcase = tcase_create("case");
 
-	tcase_add_test(tcase, test_stub);
+/*	tcase_add_test(tcase, test_stub);
 	tcase_add_test(tcase, test_array_changer);
 
 	tcase_add_test(tcase, test_detab);
@@ -558,7 +558,10 @@ Suite* str_suite (void) {
 	tcase_add_test(tcase, test_itoa);
 	tcase_add_test(tcase, test_itob);
 	tcase_add_test(tcase, test_strrindex);
-	tcase_add_test(tcase, test_atofe);
+	tcase_add_test(tcase, test_atofe);*/
+
+
+    tcase_add_test(tcase, test_squeeze);
 	/** YOUT TEST CASES HERE */
 
 	suite_add_tcase(suite, tcase);

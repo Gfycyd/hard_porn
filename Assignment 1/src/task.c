@@ -400,14 +400,14 @@ char* squeeze(const char s1[], const char s2[])
     for (i = j = 0; s[i] != '\0'; i++) {
         exist = false;
         for (k = 0; s2[k] != '\0'; k++)
-            if (s1[i] == s2[k]) {
+            if (s[i] == s2[k]) {
                 exist = true;
                 break;
             }
         if (!exist)
             s[j++] = s[i];
     }
-    s[i] = '\0';
+    s[j] = '\0';
     return s;
 }
 
