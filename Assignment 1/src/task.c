@@ -376,8 +376,9 @@ char *expand(const char s1[],  char s2[]){
             i++;
             while (p < s1[i + 1])
                 s2[j++] = p++;
-        } else
+        } else if (s1[i] != '-')
             s2[j++] = s1[i];
+
         ++i;
     }
     s2[j]='\0';
