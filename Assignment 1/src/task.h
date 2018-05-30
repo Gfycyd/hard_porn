@@ -110,7 +110,7 @@ char *expand(const char s1[]);
 
 char *itoa(int n, char s[],int b);
 
-char *itob(int n, char s[], int b);
+char *itob(int n);
 
 int strrindex(const char s[], const char t[]);
 
