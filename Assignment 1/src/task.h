@@ -108,9 +108,9 @@ char *escape(const char from[]);
 
 char *expand(const char s1[]);
 
-char *itoa(int n, char s[],int b);
+char *itoa(int n);
 
-char *itob(int n);
+char *itob(int n,int b);
 
 int strrindex(const char s[], const char t[]);
 
