@@ -385,66 +385,43 @@ END_TEST
 START_TEST (test_itob)
 {
 	int n;
-    char v[10000];
+    int  v = 1;
     int b;
     n = -10;
     b = 16;
-    itob(n,v,b);
     int i = 0;
     char t [] = "-a";
-    int s = 1;
-    while (v[i] != '\0') {
-        if (t[i] != v[i]) {
-            s = 0;
-        }
-        ++i;
-    }
+    COMPARATOR(v,itob(n,b),t);
+    //printf("%d",v);
+    ck_assert(1 == v);
     n = 100;
     b = 16;
-    itob(n,v,b);
     char t2 [] = "64";
-     i = 0;
-    while (v[i] != '\0') {
-        if (t2[i] != v[i]) {
-            s = 0;
-        }
-        ++i;
-    }
+    v = 1;
+    COMPARATOR(v,itob(n,b),t2);
+    //printf("%d",v);
+    ck_assert(1 == v);
     n = 170;
     b = 9;
-    itob(n,v,b);
     char t3 [] = "208";
-    i = 0;
-    while (v[i] != '\0') {
-        if (t3[i] != v[i]) {
-            s = 0;
-        }
-        ++i;
-    }
+    v = 1;
+    COMPARATOR(v,itob(n,b),t3);
+    //printf("%d",v);
+    ck_assert(1 == v);
     n = 0;
     b = 16;
-    itob(n,v,b);
     char t4 [] = "0";
-    i = 0;
-    while (v[i] != '\0') {
-        if (t4[i] != v[i]) {
-            s = 0;
-        }
-        ++i;
-    }
+    v = 1;
+    COMPARATOR(v,itob(n,b),t4);
+    //printf("%d",v);
+    ck_assert(1 == v);
     n = 14;
     b = 2;
-    itob(n,v,b);
     char t5 [] = "1110";
-    i = 0;
-    while (v[i] != '\0') {
-        if (t5[i] != v[i]) {
-            s = 0;
-        }
-        ++i;
-    }
-	ck_assert(1 == s);
-	
+    v = 1;
+    COMPARATOR(v,itob(n,b),t5);
+    //printf("%d",v);
+    ck_assert(1 == v);
 }
 END_TEST
 
