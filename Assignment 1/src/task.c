@@ -285,24 +285,22 @@ double atofe(const char s[]) {
     return esign == 1 ? mantisa * exp : mantisa / exp; //culculate result
 
 }
-char *itoa(int n, char s[], int w){
+char *itoa(int n){
 void reverse(char s[]);
-
-int i,sign;
-if ((sign = n) < 0)
-n = -n;
-i = 0;
-do {
-s[i++] = n % 10 + '0';
-}
-while ((n /=10) > 0);
-if (sign <0)
-s[i++] = '-';
-while(i<w)
-s[i++]=' ';
-s[i] = '\0';
-reverse(s);
-return s;
+    char *s = ALLOCATE(33);
+    int i,sign;
+    if ((sign = n) < 0)
+        n = -n;
+    i = 0;
+    do {
+        s[i++] = n % 10 + '0';
+    }
+    while ((n /=10) > 0);
+    if (sign <0)
+        s[i++] = '-';
+    s[i] = '\0';
+    reverse(s);
+    return s;
 }
 //KATYKHA EBASH(2)
 void reverse(char s[])
