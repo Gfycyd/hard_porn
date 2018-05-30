@@ -310,7 +310,7 @@ void reverse(char s[])
     for(i=0,j=strlen(s)-1;i<j;i++,j--)
         c=s[i],s[i]=s[j],s[j]=c;
 }
-char *itob(int n, char s[], int b){
+char *itob(int n, int b){
    char *s = ALLOCATE(33);
     void reverse(char s[]);
     int i = 0;
