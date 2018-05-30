@@ -359,26 +359,26 @@ START_TEST (test_itoa)
     char t [] = "-400";
     int v = 1;
     COMPARATOR(v,itoa(n),t);
-    //ck_assert( 1 == v );
-    printf("%d",v);
+    ck_assert( 1 == v );
+    //printf("%d",v);
     n = -4;
     char t2 [] = "-4";
     v = 1;
     COMPARATOR(v,itoa(n),t2);
-    printf("%d",v);
-    //ck_assert( 1 == v );
+    //printf("%d",v);
+    ck_assert( 1 == v );
     n = 100;
     char t3 [] = "100";
     v = 1;
     COMPARATOR(v,itoa(n),t3);
-    printf("%d",v);
-    //ck_assert( 1 == v );
+    //printf("%d",v);
+    ck_assert( 1 == v );
     n = -1000000;
     char t4 [] = "-1000000";
     v = 1;
     COMPARATOR(v,itoa(n),t4);
-    printf("%d",v);
-    //ck_assert( 1 == v );
+    //printf("%d",v);
+    ck_assert( 1 == v );
 }
 END_TEST
 
