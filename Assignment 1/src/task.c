@@ -311,6 +311,7 @@ void reverse(char s[])
         c=s[i],s[i]=s[j],s[j]=c;
 }
 char *itob(int n, char s[], int b){
+   char *s = ALLOCATE(33);
     void reverse(char s[]);
     int i = 0;
     int sign;
@@ -334,6 +335,8 @@ char *itob(int n, char s[], int b){
     }
     else s[i] = '0';
     s[++i] = '\0';
+    if (b<=0) s = "invalid";
+    return s;
 }
 int binsearch( int x, int v[], int n){
     int low, high, mid;
