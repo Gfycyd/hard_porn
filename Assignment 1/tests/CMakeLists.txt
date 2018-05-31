@@ -7,10 +7,16 @@ include_directories(${CHECK_INCLUDE_DIRS})
 
 include_directories(. ../src)
 
-add_executable(test_binarize test_binarize.c ../src/binarize.c)
+add_executable(test_binarize test_binarize.c ../src/binarize.c ../src/stack.c ../src/stack.h)
 add_executable(test_task test_task.c ../src/task.c)
+add_executable(test_stack test_stack.c ../src/stack.c)
+add_executable(test_queue test_queue.c ../src/priority_queue.c)
 
 target_link_libraries(test_binarize ${CHECK_LIBRARIES} ${CMAKE_THREAD_LIBS_INIT})
 target_link_libraries(test_task ${CHECK_LIBRARIES} ${CMAKE_THREAD_LIBS_INIT})
+target_link_libraries(test_queue ${CHECK_LIBRARIES} ${CMAKE_THREAD_LIBS_INIT})
+target_link_libraries(test_stack ${CHECK_LIBRARIES} ${CMAKE_THREAD_LIBS_INIT})
 
 add_test(test_binarize ${CMAKE_CURRENT_BINARY_DIR}/test_binarize)
+add_test(test_queue ${CMAKE_CURRENT_BINARY_DIR}/test_queue)
+add_test(test_stack ${CMAKE_CURRENT_BINARY_DIR}/test_stack)
