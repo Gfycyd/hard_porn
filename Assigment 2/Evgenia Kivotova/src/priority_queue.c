@@ -5,7 +5,7 @@
 #include <math.h>
 #include "priority_queue.h"
 
-struct Node 
+struct Node
 {
 	double value;
 	int key;

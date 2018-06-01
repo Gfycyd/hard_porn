@@ -10,7 +10,7 @@
 
 int push(double value);
 double pop();
-double pick();
+double peek();
 
 int stack_size();
 

@@ -4,7 +4,7 @@
 #include <math.h>
 #include "stack.h"
 
-struct Node 
+struct Node
 {
 	double value;
 	struct Node* next;
@@ -20,7 +20,7 @@ int push(double value)
 	//	0 - success
 	//	1 - not enough free space in the stack
 	//  2 - other
-	
+
 	// the stack size is 50 elements
 
 	/* YOUR CODE */
@@ -50,7 +50,7 @@ int push(double value)
 	}
 	return 2;
 }
- 
+
 double pop()
 {
 	// returns top value and delete it from stack
@@ -70,7 +70,7 @@ double pop()
 
 }
 
-double pick()
+double peek()
 {
 	// just returns the top value
 	// if stack is empty returns -infinity and print error message to the screen

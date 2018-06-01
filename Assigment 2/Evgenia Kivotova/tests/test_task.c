@@ -58,7 +58,7 @@ START_TEST (test_stack)
 
 		/**Pick top in random step of cycle*/
 		if(i == index){
-			element = pick();
+			element = peek();
 			ck_assert(element == index);
 		}
 
@@ -76,7 +76,7 @@ START_TEST (test_stack)
 	}
 
 	/**Try to extract min from empty stack (2)*/
-	element = extract_min();
+	element = pop();
 	ck_assert(element == -INFINITY);
 
 /**
