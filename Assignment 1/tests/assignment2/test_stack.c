@@ -1,5 +1,5 @@
 #include <check.h>
-#include "stack.h"
+#include "assignment2/stack.h"
 
 START_TEST(test_stack){
     /**Check empty stack*/
@@ -9,7 +9,7 @@ START_TEST(test_stack){
     push(34);
     push(11);
     push(0.5);
-    /**test of pop() and peek()*/ 
+    /**test of pop() and peek()*/
     ck_assert(pop() == 0.5);
     ck_assert(pop() == 11);
     ck_assert(peek() == 34);

@@ -39,27 +39,38 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /root/clion-2018.1.3/bin/cmake/bin/cmake
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /root/clion-2018.1.3/bin/cmake/bin/cmake -E remove -f
+RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/root/CLionProjects/very_hard_porn/Assignment 1"
+CMAKE_SOURCE_DIR = "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug"
+CMAKE_BINARY_DIR = "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/Applications/CLion.app/Contents/bin/cmake/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/root/clion-2018.1.3/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +81,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/root/clion-2018.1.3/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -78,27 +89,16 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/root/clion-2018.1.3/bin/cmake/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
-
 # The main all target
 all: cmake_check_build_system
-	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_progress_start "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles" "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/tests/CMakeFiles/progress.marks"
-	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 tests/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles" 0
+	cd "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_progress_start "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/CMakeFiles" "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/tests/CMakeFiles/progress.marks"
+	cd "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 tests/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 tests/clean
+	cd "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 tests/clean
 .PHONY : clean
 
 # The main clean target
@@ -108,37 +108,67 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 tests/preinstall
+	cd "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 tests/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 tests/preinstall
+	cd "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 tests/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug" && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug" && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
-tests/CMakeFiles/test_binarize.dir/rule:
-	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_binarize.dir/rule
-.PHONY : tests/CMakeFiles/test_binarize.dir/rule
+tests/CMakeFiles/test_stack.dir/rule:
+	cd "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_stack.dir/rule
+.PHONY : tests/CMakeFiles/test_stack.dir/rule
 
 # Convenience name for target.
-test_binarize: tests/CMakeFiles/test_binarize.dir/rule
+test_stack: tests/CMakeFiles/test_stack.dir/rule
 
-.PHONY : test_binarize
+.PHONY : test_stack
 
 # fast build rule for target.
-test_binarize/fast:
-	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_binarize.dir/build.make tests/CMakeFiles/test_binarize.dir/build
-.PHONY : test_binarize/fast
+test_stack/fast:
+	cd "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_stack.dir/build.make tests/CMakeFiles/test_stack.dir/build
+.PHONY : test_stack/fast
+
+# Convenience name for target.
+tests/CMakeFiles/test_bitMap.dir/rule:
+	cd "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_bitMap.dir/rule
+.PHONY : tests/CMakeFiles/test_bitMap.dir/rule
+
+# Convenience name for target.
+test_bitMap: tests/CMakeFiles/test_bitMap.dir/rule
+
+.PHONY : test_bitMap
+
+# fast build rule for target.
+test_bitMap/fast:
+	cd "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_bitMap.dir/build.make tests/CMakeFiles/test_bitMap.dir/build
+.PHONY : test_bitMap/fast
+
+# Convenience name for target.
+tests/CMakeFiles/test_queue.dir/rule:
+	cd "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_queue.dir/rule
+.PHONY : tests/CMakeFiles/test_queue.dir/rule
+
+# Convenience name for target.
+test_queue: tests/CMakeFiles/test_queue.dir/rule
+
+.PHONY : test_queue
+
+# fast build rule for target.
+test_queue/fast:
+	cd "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_queue.dir/build.make tests/CMakeFiles/test_queue.dir/build
+.PHONY : test_queue/fast
 
 # Convenience name for target.
 tests/CMakeFiles/test_task.dir/rule:
-	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_task.dir/rule
+	cd "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_task.dir/rule
 .PHONY : tests/CMakeFiles/test_task.dir/rule
 
 # Convenience name for target.
@@ -148,143 +178,296 @@ test_task: tests/CMakeFiles/test_task.dir/rule
 
 # fast build rule for target.
 test_task/fast:
-	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_task.dir/build.make tests/CMakeFiles/test_task.dir/build
+	cd "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_task.dir/build.make tests/CMakeFiles/test_task.dir/build
 .PHONY : test_task/fast
 
-__/src/binarize.o: __/src/binarize.c.o
+# Convenience name for target.
+tests/CMakeFiles/test_binarize.dir/rule:
+	cd "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_binarize.dir/rule
+.PHONY : tests/CMakeFiles/test_binarize.dir/rule
 
-.PHONY : __/src/binarize.o
+# Convenience name for target.
+test_binarize: tests/CMakeFiles/test_binarize.dir/rule
 
-# target to build an object file
-__/src/binarize.c.o:
-	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_binarize.dir/build.make tests/CMakeFiles/test_binarize.dir/__/src/binarize.c.o
-.PHONY : __/src/binarize.c.o
+.PHONY : test_binarize
 
-__/src/binarize.i: __/src/binarize.c.i
+# fast build rule for target.
+test_binarize/fast:
+	cd "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_binarize.dir/build.make tests/CMakeFiles/test_binarize.dir/build
+.PHONY : test_binarize/fast
 
-.PHONY : __/src/binarize.i
+__/src/assignment0_1/binarize.o: __/src/assignment0_1/binarize.c.o
 
-# target to preprocess a source file
-__/src/binarize.c.i:
-	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_binarize.dir/build.make tests/CMakeFiles/test_binarize.dir/__/src/binarize.c.i
-.PHONY : __/src/binarize.c.i
-
-__/src/binarize.s: __/src/binarize.c.s
-
-.PHONY : __/src/binarize.s
-
-# target to generate assembly for a file
-__/src/binarize.c.s:
-	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_binarize.dir/build.make tests/CMakeFiles/test_binarize.dir/__/src/binarize.c.s
-.PHONY : __/src/binarize.c.s
-
-__/src/sykatest.o: __/src/sykatest.c.o
-
-.PHONY : __/src/sykatest.o
+.PHONY : __/src/assignment0_1/binarize.o
 
 # target to build an object file
-__/src/sykatest.c.o:
-	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_binarize.dir/build.make tests/CMakeFiles/test_binarize.dir/__/src/sykatest.c.o
-.PHONY : __/src/sykatest.c.o
+__/src/assignment0_1/binarize.c.o:
+	cd "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_binarize.dir/build.make tests/CMakeFiles/test_binarize.dir/__/src/assignment0_1/binarize.c.o
+.PHONY : __/src/assignment0_1/binarize.c.o
 
-__/src/sykatest.i: __/src/sykatest.c.i
+__/src/assignment0_1/binarize.i: __/src/assignment0_1/binarize.c.i
 
-.PHONY : __/src/sykatest.i
+.PHONY : __/src/assignment0_1/binarize.i
 
 # target to preprocess a source file
-__/src/sykatest.c.i:
-	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_binarize.dir/build.make tests/CMakeFiles/test_binarize.dir/__/src/sykatest.c.i
-.PHONY : __/src/sykatest.c.i
+__/src/assignment0_1/binarize.c.i:
+	cd "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_binarize.dir/build.make tests/CMakeFiles/test_binarize.dir/__/src/assignment0_1/binarize.c.i
+.PHONY : __/src/assignment0_1/binarize.c.i
 
-__/src/sykatest.s: __/src/sykatest.c.s
+__/src/assignment0_1/binarize.s: __/src/assignment0_1/binarize.c.s
 
-.PHONY : __/src/sykatest.s
+.PHONY : __/src/assignment0_1/binarize.s
 
 # target to generate assembly for a file
-__/src/sykatest.c.s:
-	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_binarize.dir/build.make tests/CMakeFiles/test_binarize.dir/__/src/sykatest.c.s
-.PHONY : __/src/sykatest.c.s
+__/src/assignment0_1/binarize.c.s:
+	cd "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_binarize.dir/build.make tests/CMakeFiles/test_binarize.dir/__/src/assignment0_1/binarize.c.s
+.PHONY : __/src/assignment0_1/binarize.c.s
 
-__/src/task.o: __/src/task.c.o
+__/src/assignment0_1/task.o: __/src/assignment0_1/task.c.o
 
-.PHONY : __/src/task.o
+.PHONY : __/src/assignment0_1/task.o
 
 # target to build an object file
-__/src/task.c.o:
-	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_task.dir/build.make tests/CMakeFiles/test_task.dir/__/src/task.c.o
-.PHONY : __/src/task.c.o
+__/src/assignment0_1/task.c.o:
+	cd "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_task.dir/build.make tests/CMakeFiles/test_task.dir/__/src/assignment0_1/task.c.o
+.PHONY : __/src/assignment0_1/task.c.o
 
-__/src/task.i: __/src/task.c.i
+__/src/assignment0_1/task.i: __/src/assignment0_1/task.c.i
 
-.PHONY : __/src/task.i
+.PHONY : __/src/assignment0_1/task.i
 
 # target to preprocess a source file
-__/src/task.c.i:
-	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_task.dir/build.make tests/CMakeFiles/test_task.dir/__/src/task.c.i
-.PHONY : __/src/task.c.i
+__/src/assignment0_1/task.c.i:
+	cd "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_task.dir/build.make tests/CMakeFiles/test_task.dir/__/src/assignment0_1/task.c.i
+.PHONY : __/src/assignment0_1/task.c.i
 
-__/src/task.s: __/src/task.c.s
+__/src/assignment0_1/task.s: __/src/assignment0_1/task.c.s
 
-.PHONY : __/src/task.s
+.PHONY : __/src/assignment0_1/task.s
 
 # target to generate assembly for a file
-__/src/task.c.s:
-	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_task.dir/build.make tests/CMakeFiles/test_task.dir/__/src/task.c.s
-.PHONY : __/src/task.c.s
+__/src/assignment0_1/task.c.s:
+	cd "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_task.dir/build.make tests/CMakeFiles/test_task.dir/__/src/assignment0_1/task.c.s
+.PHONY : __/src/assignment0_1/task.c.s
 
-test_binarize.o: test_binarize.c.o
+__/src/assignment2/priority_queue.o: __/src/assignment2/priority_queue.c.o
 
-.PHONY : test_binarize.o
+.PHONY : __/src/assignment2/priority_queue.o
 
 # target to build an object file
-test_binarize.c.o:
-	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_binarize.dir/build.make tests/CMakeFiles/test_binarize.dir/test_binarize.c.o
-.PHONY : test_binarize.c.o
+__/src/assignment2/priority_queue.c.o:
+	cd "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_queue.dir/build.make tests/CMakeFiles/test_queue.dir/__/src/assignment2/priority_queue.c.o
+.PHONY : __/src/assignment2/priority_queue.c.o
 
-test_binarize.i: test_binarize.c.i
+__/src/assignment2/priority_queue.i: __/src/assignment2/priority_queue.c.i
 
-.PHONY : test_binarize.i
+.PHONY : __/src/assignment2/priority_queue.i
 
 # target to preprocess a source file
-test_binarize.c.i:
-	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_binarize.dir/build.make tests/CMakeFiles/test_binarize.dir/test_binarize.c.i
-.PHONY : test_binarize.c.i
+__/src/assignment2/priority_queue.c.i:
+	cd "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_queue.dir/build.make tests/CMakeFiles/test_queue.dir/__/src/assignment2/priority_queue.c.i
+.PHONY : __/src/assignment2/priority_queue.c.i
 
-test_binarize.s: test_binarize.c.s
+__/src/assignment2/priority_queue.s: __/src/assignment2/priority_queue.c.s
 
-.PHONY : test_binarize.s
+.PHONY : __/src/assignment2/priority_queue.s
 
 # target to generate assembly for a file
-test_binarize.c.s:
-	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_binarize.dir/build.make tests/CMakeFiles/test_binarize.dir/test_binarize.c.s
-.PHONY : test_binarize.c.s
+__/src/assignment2/priority_queue.c.s:
+	cd "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_queue.dir/build.make tests/CMakeFiles/test_queue.dir/__/src/assignment2/priority_queue.c.s
+.PHONY : __/src/assignment2/priority_queue.c.s
 
-test_task.o: test_task.c.o
+__/src/assignment2/stack.o: __/src/assignment2/stack.c.o
 
-.PHONY : test_task.o
+.PHONY : __/src/assignment2/stack.o
 
 # target to build an object file
-test_task.c.o:
-	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_task.dir/build.make tests/CMakeFiles/test_task.dir/test_task.c.o
-.PHONY : test_task.c.o
+__/src/assignment2/stack.c.o:
+	cd "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_stack.dir/build.make tests/CMakeFiles/test_stack.dir/__/src/assignment2/stack.c.o
+	cd "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_binarize.dir/build.make tests/CMakeFiles/test_binarize.dir/__/src/assignment2/stack.c.o
+.PHONY : __/src/assignment2/stack.c.o
 
-test_task.i: test_task.c.i
+__/src/assignment2/stack.i: __/src/assignment2/stack.c.i
 
-.PHONY : test_task.i
+.PHONY : __/src/assignment2/stack.i
 
 # target to preprocess a source file
-test_task.c.i:
-	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_task.dir/build.make tests/CMakeFiles/test_task.dir/test_task.c.i
-.PHONY : test_task.c.i
+__/src/assignment2/stack.c.i:
+	cd "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_stack.dir/build.make tests/CMakeFiles/test_stack.dir/__/src/assignment2/stack.c.i
+	cd "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_binarize.dir/build.make tests/CMakeFiles/test_binarize.dir/__/src/assignment2/stack.c.i
+.PHONY : __/src/assignment2/stack.c.i
 
-test_task.s: test_task.c.s
+__/src/assignment2/stack.s: __/src/assignment2/stack.c.s
 
-.PHONY : test_task.s
+.PHONY : __/src/assignment2/stack.s
 
 # target to generate assembly for a file
-test_task.c.s:
-	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_task.dir/build.make tests/CMakeFiles/test_task.dir/test_task.c.s
-.PHONY : test_task.c.s
+__/src/assignment2/stack.c.s:
+	cd "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_stack.dir/build.make tests/CMakeFiles/test_stack.dir/__/src/assignment2/stack.c.s
+	cd "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_binarize.dir/build.make tests/CMakeFiles/test_binarize.dir/__/src/assignment2/stack.c.s
+.PHONY : __/src/assignment2/stack.c.s
+
+__/src/assignment3/bitMap.o: __/src/assignment3/bitMap.c.o
+
+.PHONY : __/src/assignment3/bitMap.o
+
+# target to build an object file
+__/src/assignment3/bitMap.c.o:
+	cd "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_bitMap.dir/build.make tests/CMakeFiles/test_bitMap.dir/__/src/assignment3/bitMap.c.o
+.PHONY : __/src/assignment3/bitMap.c.o
+
+__/src/assignment3/bitMap.i: __/src/assignment3/bitMap.c.i
+
+.PHONY : __/src/assignment3/bitMap.i
+
+# target to preprocess a source file
+__/src/assignment3/bitMap.c.i:
+	cd "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_bitMap.dir/build.make tests/CMakeFiles/test_bitMap.dir/__/src/assignment3/bitMap.c.i
+.PHONY : __/src/assignment3/bitMap.c.i
+
+__/src/assignment3/bitMap.s: __/src/assignment3/bitMap.c.s
+
+.PHONY : __/src/assignment3/bitMap.s
+
+# target to generate assembly for a file
+__/src/assignment3/bitMap.c.s:
+	cd "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_bitMap.dir/build.make tests/CMakeFiles/test_bitMap.dir/__/src/assignment3/bitMap.c.s
+.PHONY : __/src/assignment3/bitMap.c.s
+
+assignment0_1/test_binarize.o: assignment0_1/test_binarize.c.o
+
+.PHONY : assignment0_1/test_binarize.o
+
+# target to build an object file
+assignment0_1/test_binarize.c.o:
+	cd "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_binarize.dir/build.make tests/CMakeFiles/test_binarize.dir/assignment0_1/test_binarize.c.o
+.PHONY : assignment0_1/test_binarize.c.o
+
+assignment0_1/test_binarize.i: assignment0_1/test_binarize.c.i
+
+.PHONY : assignment0_1/test_binarize.i
+
+# target to preprocess a source file
+assignment0_1/test_binarize.c.i:
+	cd "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_binarize.dir/build.make tests/CMakeFiles/test_binarize.dir/assignment0_1/test_binarize.c.i
+.PHONY : assignment0_1/test_binarize.c.i
+
+assignment0_1/test_binarize.s: assignment0_1/test_binarize.c.s
+
+.PHONY : assignment0_1/test_binarize.s
+
+# target to generate assembly for a file
+assignment0_1/test_binarize.c.s:
+	cd "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_binarize.dir/build.make tests/CMakeFiles/test_binarize.dir/assignment0_1/test_binarize.c.s
+.PHONY : assignment0_1/test_binarize.c.s
+
+assignment0_1/test_task.o: assignment0_1/test_task.c.o
+
+.PHONY : assignment0_1/test_task.o
+
+# target to build an object file
+assignment0_1/test_task.c.o:
+	cd "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_task.dir/build.make tests/CMakeFiles/test_task.dir/assignment0_1/test_task.c.o
+.PHONY : assignment0_1/test_task.c.o
+
+assignment0_1/test_task.i: assignment0_1/test_task.c.i
+
+.PHONY : assignment0_1/test_task.i
+
+# target to preprocess a source file
+assignment0_1/test_task.c.i:
+	cd "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_task.dir/build.make tests/CMakeFiles/test_task.dir/assignment0_1/test_task.c.i
+.PHONY : assignment0_1/test_task.c.i
+
+assignment0_1/test_task.s: assignment0_1/test_task.c.s
+
+.PHONY : assignment0_1/test_task.s
+
+# target to generate assembly for a file
+assignment0_1/test_task.c.s:
+	cd "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_task.dir/build.make tests/CMakeFiles/test_task.dir/assignment0_1/test_task.c.s
+.PHONY : assignment0_1/test_task.c.s
+
+assignment2/test_queue.o: assignment2/test_queue.c.o
+
+.PHONY : assignment2/test_queue.o
+
+# target to build an object file
+assignment2/test_queue.c.o:
+	cd "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_queue.dir/build.make tests/CMakeFiles/test_queue.dir/assignment2/test_queue.c.o
+.PHONY : assignment2/test_queue.c.o
+
+assignment2/test_queue.i: assignment2/test_queue.c.i
+
+.PHONY : assignment2/test_queue.i
+
+# target to preprocess a source file
+assignment2/test_queue.c.i:
+	cd "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_queue.dir/build.make tests/CMakeFiles/test_queue.dir/assignment2/test_queue.c.i
+.PHONY : assignment2/test_queue.c.i
+
+assignment2/test_queue.s: assignment2/test_queue.c.s
+
+.PHONY : assignment2/test_queue.s
+
+# target to generate assembly for a file
+assignment2/test_queue.c.s:
+	cd "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_queue.dir/build.make tests/CMakeFiles/test_queue.dir/assignment2/test_queue.c.s
+.PHONY : assignment2/test_queue.c.s
+
+assignment2/test_stack.o: assignment2/test_stack.c.o
+
+.PHONY : assignment2/test_stack.o
+
+# target to build an object file
+assignment2/test_stack.c.o:
+	cd "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_stack.dir/build.make tests/CMakeFiles/test_stack.dir/assignment2/test_stack.c.o
+.PHONY : assignment2/test_stack.c.o
+
+assignment2/test_stack.i: assignment2/test_stack.c.i
+
+.PHONY : assignment2/test_stack.i
+
+# target to preprocess a source file
+assignment2/test_stack.c.i:
+	cd "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_stack.dir/build.make tests/CMakeFiles/test_stack.dir/assignment2/test_stack.c.i
+.PHONY : assignment2/test_stack.c.i
+
+assignment2/test_stack.s: assignment2/test_stack.c.s
+
+.PHONY : assignment2/test_stack.s
+
+# target to generate assembly for a file
+assignment2/test_stack.c.s:
+	cd "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_stack.dir/build.make tests/CMakeFiles/test_stack.dir/assignment2/test_stack.c.s
+.PHONY : assignment2/test_stack.c.s
+
+assignment3/test_bitMap.o: assignment3/test_bitMap.c.o
+
+.PHONY : assignment3/test_bitMap.o
+
+# target to build an object file
+assignment3/test_bitMap.c.o:
+	cd "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_bitMap.dir/build.make tests/CMakeFiles/test_bitMap.dir/assignment3/test_bitMap.c.o
+.PHONY : assignment3/test_bitMap.c.o
+
+assignment3/test_bitMap.i: assignment3/test_bitMap.c.i
+
+.PHONY : assignment3/test_bitMap.i
+
+# target to preprocess a source file
+assignment3/test_bitMap.c.i:
+	cd "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_bitMap.dir/build.make tests/CMakeFiles/test_bitMap.dir/assignment3/test_bitMap.c.i
+.PHONY : assignment3/test_bitMap.c.i
+
+assignment3/test_bitMap.s: assignment3/test_bitMap.c.s
+
+.PHONY : assignment3/test_bitMap.s
+
+# target to generate assembly for a file
+assignment3/test_bitMap.c.s:
+	cd "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug" && $(MAKE) -f tests/CMakeFiles/test_bitMap.dir/build.make tests/CMakeFiles/test_bitMap.dir/assignment3/test_bitMap.c.s
+.PHONY : assignment3/test_bitMap.c.s
 
 # Help Target
 help:
@@ -292,26 +475,44 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... test"
 	@echo "... rebuild_cache"
-	@echo "... test_binarize"
+	@echo "... test_stack"
+	@echo "... test_bitMap"
+	@echo "... test_queue"
 	@echo "... test_task"
 	@echo "... edit_cache"
-	@echo "... test"
-	@echo "... __/src/binarize.o"
-	@echo "... __/src/binarize.i"
-	@echo "... __/src/binarize.s"
-	@echo "... __/src/sykatest.o"
-	@echo "... __/src/sykatest.i"
-	@echo "... __/src/sykatest.s"
-	@echo "... __/src/task.o"
-	@echo "... __/src/task.i"
-	@echo "... __/src/task.s"
-	@echo "... test_binarize.o"
-	@echo "... test_binarize.i"
-	@echo "... test_binarize.s"
-	@echo "... test_task.o"
-	@echo "... test_task.i"
-	@echo "... test_task.s"
+	@echo "... test_binarize"
+	@echo "... __/src/assignment0_1/binarize.o"
+	@echo "... __/src/assignment0_1/binarize.i"
+	@echo "... __/src/assignment0_1/binarize.s"
+	@echo "... __/src/assignment0_1/task.o"
+	@echo "... __/src/assignment0_1/task.i"
+	@echo "... __/src/assignment0_1/task.s"
+	@echo "... __/src/assignment2/priority_queue.o"
+	@echo "... __/src/assignment2/priority_queue.i"
+	@echo "... __/src/assignment2/priority_queue.s"
+	@echo "... __/src/assignment2/stack.o"
+	@echo "... __/src/assignment2/stack.i"
+	@echo "... __/src/assignment2/stack.s"
+	@echo "... __/src/assignment3/bitMap.o"
+	@echo "... __/src/assignment3/bitMap.i"
+	@echo "... __/src/assignment3/bitMap.s"
+	@echo "... assignment0_1/test_binarize.o"
+	@echo "... assignment0_1/test_binarize.i"
+	@echo "... assignment0_1/test_binarize.s"
+	@echo "... assignment0_1/test_task.o"
+	@echo "... assignment0_1/test_task.i"
+	@echo "... assignment0_1/test_task.s"
+	@echo "... assignment2/test_queue.o"
+	@echo "... assignment2/test_queue.i"
+	@echo "... assignment2/test_queue.s"
+	@echo "... assignment2/test_stack.o"
+	@echo "... assignment2/test_stack.i"
+	@echo "... assignment2/test_stack.s"
+	@echo "... assignment3/test_bitMap.o"
+	@echo "... assignment3/test_bitMap.i"
+	@echo "... assignment3/test_bitMap.s"
 .PHONY : help
 
 
@@ -323,6 +524,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug" && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug" && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -4,13 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/root/CLionProjects/very_hard_porn/Assignment 1/src/task.c" "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/tests/CMakeFiles/test_task.dir/__/src/task.c.o"
-  "/root/CLionProjects/very_hard_porn/Assignment 1/tests/test_task.c" "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/tests/CMakeFiles/test_task.dir/test_task.c.o"
+  "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/src/assignment0_1/task.c" "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/tests/CMakeFiles/test_task.dir/__/src/assignment0_1/task.c.o"
+  "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/tests/assignment0_1/test_task.c" "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/tests/CMakeFiles/test_task.dir/assignment0_1/test_task.c.o"
   )
-set(CMAKE_C_COMPILER_ID "GNU")
+set(CMAKE_C_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
+  "/usr/local/include"
   "../tests/."
   "../tests/../src"
   )

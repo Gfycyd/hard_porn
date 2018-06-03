@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /root/clion-2018.1.3/bin/cmake/bin/cmake
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /root/clion-2018.1.3/bin/cmake/bin/cmake -E remove -f
+RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/root/CLionProjects/very_hard_porn/Assignment 1"
+CMAKE_SOURCE_DIR = "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug"
+CMAKE_BINARY_DIR = "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include tests/CMakeFiles/test_task.dir/depend.make
@@ -57,84 +57,85 @@ include tests/CMakeFiles/test_task.dir/progress.make
 # Include the compile flags for this target's objects.
 include tests/CMakeFiles/test_task.dir/flags.make
 
-tests/CMakeFiles/test_task.dir/test_task.c.o: tests/CMakeFiles/test_task.dir/flags.make
-tests/CMakeFiles/test_task.dir/test_task.c.o: ../tests/test_task.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object tests/CMakeFiles/test_task.dir/test_task.c.o"
-	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/tests" && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test_task.dir/test_task.c.o   -c "/root/CLionProjects/very_hard_porn/Assignment 1/tests/test_task.c"
+tests/CMakeFiles/test_task.dir/assignment0_1/test_task.c.o: tests/CMakeFiles/test_task.dir/flags.make
+tests/CMakeFiles/test_task.dir/assignment0_1/test_task.c.o: ../tests/assignment0_1/test_task.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object tests/CMakeFiles/test_task.dir/assignment0_1/test_task.c.o"
+	cd "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/tests" && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test_task.dir/assignment0_1/test_task.c.o   -c "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/tests/assignment0_1/test_task.c"
 
-tests/CMakeFiles/test_task.dir/test_task.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/test_task.dir/test_task.c.i"
-	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/tests" && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/root/CLionProjects/very_hard_porn/Assignment 1/tests/test_task.c" > CMakeFiles/test_task.dir/test_task.c.i
+tests/CMakeFiles/test_task.dir/assignment0_1/test_task.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/test_task.dir/assignment0_1/test_task.c.i"
+	cd "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/tests" && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/tests/assignment0_1/test_task.c" > CMakeFiles/test_task.dir/assignment0_1/test_task.c.i
 
-tests/CMakeFiles/test_task.dir/test_task.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test_task.dir/test_task.c.s"
-	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/tests" && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/root/CLionProjects/very_hard_porn/Assignment 1/tests/test_task.c" -o CMakeFiles/test_task.dir/test_task.c.s
+tests/CMakeFiles/test_task.dir/assignment0_1/test_task.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test_task.dir/assignment0_1/test_task.c.s"
+	cd "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/tests" && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/tests/assignment0_1/test_task.c" -o CMakeFiles/test_task.dir/assignment0_1/test_task.c.s
 
-tests/CMakeFiles/test_task.dir/test_task.c.o.requires:
+tests/CMakeFiles/test_task.dir/assignment0_1/test_task.c.o.requires:
 
-.PHONY : tests/CMakeFiles/test_task.dir/test_task.c.o.requires
+.PHONY : tests/CMakeFiles/test_task.dir/assignment0_1/test_task.c.o.requires
 
-tests/CMakeFiles/test_task.dir/test_task.c.o.provides: tests/CMakeFiles/test_task.dir/test_task.c.o.requires
-	$(MAKE) -f tests/CMakeFiles/test_task.dir/build.make tests/CMakeFiles/test_task.dir/test_task.c.o.provides.build
-.PHONY : tests/CMakeFiles/test_task.dir/test_task.c.o.provides
+tests/CMakeFiles/test_task.dir/assignment0_1/test_task.c.o.provides: tests/CMakeFiles/test_task.dir/assignment0_1/test_task.c.o.requires
+	$(MAKE) -f tests/CMakeFiles/test_task.dir/build.make tests/CMakeFiles/test_task.dir/assignment0_1/test_task.c.o.provides.build
+.PHONY : tests/CMakeFiles/test_task.dir/assignment0_1/test_task.c.o.provides
 
-tests/CMakeFiles/test_task.dir/test_task.c.o.provides.build: tests/CMakeFiles/test_task.dir/test_task.c.o
+tests/CMakeFiles/test_task.dir/assignment0_1/test_task.c.o.provides.build: tests/CMakeFiles/test_task.dir/assignment0_1/test_task.c.o
 
 
-tests/CMakeFiles/test_task.dir/__/src/task.c.o: tests/CMakeFiles/test_task.dir/flags.make
-tests/CMakeFiles/test_task.dir/__/src/task.c.o: ../src/task.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object tests/CMakeFiles/test_task.dir/__/src/task.c.o"
-	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/tests" && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test_task.dir/__/src/task.c.o   -c "/root/CLionProjects/very_hard_porn/Assignment 1/src/task.c"
+tests/CMakeFiles/test_task.dir/__/src/assignment0_1/task.c.o: tests/CMakeFiles/test_task.dir/flags.make
+tests/CMakeFiles/test_task.dir/__/src/assignment0_1/task.c.o: ../src/assignment0_1/task.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object tests/CMakeFiles/test_task.dir/__/src/assignment0_1/task.c.o"
+	cd "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/tests" && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test_task.dir/__/src/assignment0_1/task.c.o   -c "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/src/assignment0_1/task.c"
 
-tests/CMakeFiles/test_task.dir/__/src/task.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/test_task.dir/__/src/task.c.i"
-	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/tests" && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/root/CLionProjects/very_hard_porn/Assignment 1/src/task.c" > CMakeFiles/test_task.dir/__/src/task.c.i
+tests/CMakeFiles/test_task.dir/__/src/assignment0_1/task.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/test_task.dir/__/src/assignment0_1/task.c.i"
+	cd "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/tests" && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/src/assignment0_1/task.c" > CMakeFiles/test_task.dir/__/src/assignment0_1/task.c.i
 
-tests/CMakeFiles/test_task.dir/__/src/task.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test_task.dir/__/src/task.c.s"
-	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/tests" && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/root/CLionProjects/very_hard_porn/Assignment 1/src/task.c" -o CMakeFiles/test_task.dir/__/src/task.c.s
+tests/CMakeFiles/test_task.dir/__/src/assignment0_1/task.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test_task.dir/__/src/assignment0_1/task.c.s"
+	cd "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/tests" && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/src/assignment0_1/task.c" -o CMakeFiles/test_task.dir/__/src/assignment0_1/task.c.s
 
-tests/CMakeFiles/test_task.dir/__/src/task.c.o.requires:
+tests/CMakeFiles/test_task.dir/__/src/assignment0_1/task.c.o.requires:
 
-.PHONY : tests/CMakeFiles/test_task.dir/__/src/task.c.o.requires
+.PHONY : tests/CMakeFiles/test_task.dir/__/src/assignment0_1/task.c.o.requires
 
-tests/CMakeFiles/test_task.dir/__/src/task.c.o.provides: tests/CMakeFiles/test_task.dir/__/src/task.c.o.requires
-	$(MAKE) -f tests/CMakeFiles/test_task.dir/build.make tests/CMakeFiles/test_task.dir/__/src/task.c.o.provides.build
-.PHONY : tests/CMakeFiles/test_task.dir/__/src/task.c.o.provides
+tests/CMakeFiles/test_task.dir/__/src/assignment0_1/task.c.o.provides: tests/CMakeFiles/test_task.dir/__/src/assignment0_1/task.c.o.requires
+	$(MAKE) -f tests/CMakeFiles/test_task.dir/build.make tests/CMakeFiles/test_task.dir/__/src/assignment0_1/task.c.o.provides.build
+.PHONY : tests/CMakeFiles/test_task.dir/__/src/assignment0_1/task.c.o.provides
 
-tests/CMakeFiles/test_task.dir/__/src/task.c.o.provides.build: tests/CMakeFiles/test_task.dir/__/src/task.c.o
+tests/CMakeFiles/test_task.dir/__/src/assignment0_1/task.c.o.provides.build: tests/CMakeFiles/test_task.dir/__/src/assignment0_1/task.c.o
 
 
 # Object files for target test_task
 test_task_OBJECTS = \
-"CMakeFiles/test_task.dir/test_task.c.o" \
-"CMakeFiles/test_task.dir/__/src/task.c.o"
+"CMakeFiles/test_task.dir/assignment0_1/test_task.c.o" \
+"CMakeFiles/test_task.dir/__/src/assignment0_1/task.c.o"
 
 # External object files for target test_task
 test_task_EXTERNAL_OBJECTS =
 
-tests/test_task: tests/CMakeFiles/test_task.dir/test_task.c.o
-tests/test_task: tests/CMakeFiles/test_task.dir/__/src/task.c.o
+tests/test_task: tests/CMakeFiles/test_task.dir/assignment0_1/test_task.c.o
+tests/test_task: tests/CMakeFiles/test_task.dir/__/src/assignment0_1/task.c.o
 tests/test_task: tests/CMakeFiles/test_task.dir/build.make
+tests/test_task: /usr/local/lib/libcheck.dylib
 tests/test_task: tests/CMakeFiles/test_task.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable test_task"
-	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/tests" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_task.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable test_task"
+	cd "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/tests" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_task.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 tests/CMakeFiles/test_task.dir/build: tests/test_task
 
 .PHONY : tests/CMakeFiles/test_task.dir/build
 
-tests/CMakeFiles/test_task.dir/requires: tests/CMakeFiles/test_task.dir/test_task.c.o.requires
-tests/CMakeFiles/test_task.dir/requires: tests/CMakeFiles/test_task.dir/__/src/task.c.o.requires
+tests/CMakeFiles/test_task.dir/requires: tests/CMakeFiles/test_task.dir/assignment0_1/test_task.c.o.requires
+tests/CMakeFiles/test_task.dir/requires: tests/CMakeFiles/test_task.dir/__/src/assignment0_1/task.c.o.requires
 
 .PHONY : tests/CMakeFiles/test_task.dir/requires
 
 tests/CMakeFiles/test_task.dir/clean:
-	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/tests" && $(CMAKE_COMMAND) -P CMakeFiles/test_task.dir/cmake_clean.cmake
+	cd "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/tests" && $(CMAKE_COMMAND) -P CMakeFiles/test_task.dir/cmake_clean.cmake
 .PHONY : tests/CMakeFiles/test_task.dir/clean
 
 tests/CMakeFiles/test_task.dir/depend:
-	cd "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/root/CLionProjects/very_hard_porn/Assignment 1" "/root/CLionProjects/very_hard_porn/Assignment 1/tests" "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug" "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/tests" "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/tests/CMakeFiles/test_task.dir/DependInfo.cmake" --color=$(COLOR)
+	cd "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1" "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/tests" "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug" "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/tests" "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/tests/CMakeFiles/test_task.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : tests/CMakeFiles/test_task.dir/depend
 

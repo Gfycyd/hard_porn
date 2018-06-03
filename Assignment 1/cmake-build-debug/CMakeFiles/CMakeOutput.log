@@ -1,6 +1,6 @@
-The system is: Linux - 4.16.11-1-ARCH - x86_64
+The system is: Darwin - 17.5.0 - x86_64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-Compiler: /usr/bin/cc 
+Compiler: /Library/Developer/CommandLineTools/usr/bin/cc 
 Build flags: 
 Id flags:  
 
@@ -10,10 +10,10 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles/3.10.3/CompilerIdC/a.out"
+The C compiler identification is AppleClang, found in "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/CMakeFiles/3.10.3/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-Compiler: /usr/bin/c++ 
+Compiler: /Library/Developer/CommandLineTools/usr/bin/c++ 
 Build flags: 
 Id flags:  
 
@@ -23,135 +23,103 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles/3.10.3/CompilerIdCXX/a.out"
+The CXX compiler identification is AppleClang, found in "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/CMakeFiles/3.10.3/CompilerIdCXX/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_923cb/fast"
-/usr/bin/make -f CMakeFiles/cmTC_923cb.dir/build.make CMakeFiles/cmTC_923cb.dir/build
-make[1]: Entering directory '/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_923cb.dir/testCCompiler.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_923cb.dir/testCCompiler.c.o   -c "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles/CMakeTmp/testCCompiler.c"
-Linking C executable cmTC_923cb
-/root/clion-2018.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_923cb.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_923cb.dir/testCCompiler.c.o  -o cmTC_923cb 
-make[1]: Leaving directory '/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_d31ec/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_d31ec.dir/build.make CMakeFiles/cmTC_d31ec.dir/build
+Building C object CMakeFiles/cmTC_d31ec.dir/testCCompiler.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc    -o CMakeFiles/cmTC_d31ec.dir/testCCompiler.c.o   -c "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/CMakeFiles/CMakeTmp/testCCompiler.c"
+Linking C executable cmTC_d31ec
+/Applications/CLion.app/Contents/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d31ec.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_d31ec.dir/testCCompiler.c.o  -o cmTC_d31ec 
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_8ee4f/fast"
-/usr/bin/make -f CMakeFiles/cmTC_8ee4f.dir/build.make CMakeFiles/cmTC_8ee4f.dir/build
-make[1]: Entering directory '/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_8ee4f.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_8ee4f.dir/CMakeCCompilerABI.c.o   -c /root/clion-2018.1.3/bin/cmake/share/cmake-3.10/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_8ee4f
-/root/clion-2018.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8ee4f.dir/link.txt --verbose=1
-/usr/bin/cc     -v CMakeFiles/cmTC_8ee4f.dir/CMakeCCompilerABI.c.o  -o cmTC_8ee4f 
-Using built-in specs.
-COLLECT_GCC=/usr/bin/cc
-COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/lto-wrapper
-Target: x86_64-pc-linux-gnu
-Configured with: /build/gcc/src/gcc/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --enable-libmpx --with-system-zlib --with-isl --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --enable-gnu-indirect-function --enable-multilib --disable-werror --enable-checking=release --enable-default-pie --enable-default-ssp
+Run Build Command:"/usr/bin/make" "cmTC_1cc03/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_1cc03.dir/build.make CMakeFiles/cmTC_1cc03.dir/build
+Building C object CMakeFiles/cmTC_1cc03.dir/CMakeCCompilerABI.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc    -o CMakeFiles/cmTC_1cc03.dir/CMakeCCompilerABI.c.o   -c /Applications/CLion.app/Contents/bin/cmake/share/cmake-3.10/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_1cc03
+/Applications/CLion.app/Contents/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1cc03.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_1cc03.dir/CMakeCCompilerABI.c.o  -o cmTC_1cc03 
+Apple LLVM version 9.1.0 (clang-902.0.39.1)
+Target: x86_64-apple-darwin17.5.0
 Thread model: posix
-gcc version 8.1.0 (GCC) 
-COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/
-LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_8ee4f' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccyM6o83.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_8ee4f /usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0 -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/../../.. CMakeFiles/cmTC_8ee4f.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/../../../../lib/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_8ee4f' '-mtune=generic' '-march=x86-64'
-make[1]: Leaving directory '/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles/CMakeTmp'
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch x86_64 -macosx_version_min 10.13.0 -o cmTC_1cc03 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_1cc03.dir/CMakeCCompilerABI.c.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/9.1.0/lib/darwin/libclang_rt.osx.a
+@(#)PROGRAM:ld  PROJECT:ld64-351.8
+configured to support archs: armv6 armv7 armv7s arm64 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em (tvOS)
+Library search paths:
+	/usr/lib
+	/usr/local/lib
+Framework search paths:
+	/Library/Frameworks/
+	/System/Library/Frameworks/
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_8ee4f/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_8ee4f.dir/build.make CMakeFiles/cmTC_8ee4f.dir/build]
-  ignore line: [make[1]: Entering directory '/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_8ee4f.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_8ee4f.dir/CMakeCCompilerABI.c.o   -c /root/clion-2018.1.3/bin/cmake/share/cmake-3.10/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_8ee4f]
-  ignore line: [/root/clion-2018.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8ee4f.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc     -v CMakeFiles/cmTC_8ee4f.dir/CMakeCCompilerABI.c.o  -o cmTC_8ee4f ]
-  ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=/usr/bin/cc]
-  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/lto-wrapper]
-  ignore line: [Target: x86_64-pc-linux-gnu]
-  ignore line: [Configured with: /build/gcc/src/gcc/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --enable-libmpx --with-system-zlib --with-isl --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --enable-gnu-indirect-function --enable-multilib --disable-werror --enable-checking=release --enable-default-pie --enable-default-ssp]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_1cc03/fast"]
+  ignore line: [/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_1cc03.dir/build.make CMakeFiles/cmTC_1cc03.dir/build]
+  ignore line: [Building C object CMakeFiles/cmTC_1cc03.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/Library/Developer/CommandLineTools/usr/bin/cc    -o CMakeFiles/cmTC_1cc03.dir/CMakeCCompilerABI.c.o   -c /Applications/CLion.app/Contents/bin/cmake/share/cmake-3.10/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_1cc03]
+  ignore line: [/Applications/CLion.app/Contents/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1cc03.dir/link.txt --verbose=1]
+  ignore line: [/Library/Developer/CommandLineTools/usr/bin/cc   -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_1cc03.dir/CMakeCCompilerABI.c.o  -o cmTC_1cc03 ]
+  ignore line: [Apple LLVM version 9.1.0 (clang-902.0.39.1)]
+  ignore line: [Target: x86_64-apple-darwin17.5.0]
   ignore line: [Thread model: posix]
-  ignore line: [gcc version 8.1.0 (GCC) ]
-  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_8ee4f' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccyM6o83.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_8ee4f /usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0 -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/../../.. CMakeFiles/cmTC_8ee4f.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/../../../../lib/crtn.o]
-    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/collect2] ==> ignore
-    arg [-plugin] ==> ignore
-    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/liblto_plugin.so] ==> ignore
-    arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccyM6o83.res] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
-    arg [-plugin-opt=-pass-through=-lc] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
-    arg [--build-id] ==> ignore
-    arg [--eh-frame-hdr] ==> ignore
-    arg [--hash-style=gnu] ==> ignore
-    arg [-m] ==> ignore
-    arg [elf_x86_64] ==> ignore
-    arg [-dynamic-linker] ==> ignore
-    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
-    arg [-pie] ==> ignore
+  ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
+  link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch x86_64 -macosx_version_min 10.13.0 -o cmTC_1cc03 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_1cc03.dir/CMakeCCompilerABI.c.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/9.1.0/lib/darwin/libclang_rt.osx.a]
+    arg [/Library/Developer/CommandLineTools/usr/bin/ld] ==> ignore
+    arg [-demangle] ==> ignore
+    arg [-lto_library] ==> ignore, skip following value
+    arg [/Library/Developer/CommandLineTools/usr/lib/libLTO.dylib] ==> skip value of -lto_library
+    arg [-dynamic] ==> ignore
+    arg [-arch] ==> ignore
+    arg [x86_64] ==> ignore
+    arg [-macosx_version_min] ==> ignore
+    arg [10.13.0] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_8ee4f] ==> ignore
-    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/../../../../lib/Scrt1.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/../../../../lib/crti.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/crtbeginS.o] ==> ignore
-    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0]
-    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/../../../../lib]
-    arg [-L/lib/../lib] ==> dir [/lib/../lib]
-    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
-    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/../../..]
-    arg [CMakeFiles/cmTC_8ee4f.dir/CMakeCCompilerABI.c.o] ==> ignore
-    arg [-lgcc] ==> lib [gcc]
-    arg [--as-needed] ==> ignore
-    arg [-lgcc_s] ==> lib [gcc_s]
-    arg [--no-as-needed] ==> ignore
-    arg [-lc] ==> lib [c]
-    arg [-lgcc] ==> lib [gcc]
-    arg [--as-needed] ==> ignore
-    arg [-lgcc_s] ==> lib [gcc_s]
-    arg [--no-as-needed] ==> ignore
-    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/crtendS.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/../../../../lib/crtn.o] ==> ignore
-  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0]
-  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/../../../../lib] ==> [/usr/lib]
-  collapse library dir [/lib/../lib] ==> [/lib]
-  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
-  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/../../..] ==> [/usr/lib]
-  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
-  implicit dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0;/usr/lib;/lib]
-  implicit fwks: []
+    arg [cmTC_1cc03] ==> ignore
+    arg [-search_paths_first] ==> ignore
+    arg [-headerpad_max_install_names] ==> ignore
+    arg [-v] ==> ignore
+    arg [CMakeFiles/cmTC_1cc03.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lSystem] ==> lib [System]
+    arg [/Library/Developer/CommandLineTools/usr/lib/clang/9.1.0/lib/darwin/libclang_rt.osx.a] ==> lib [/Library/Developer/CommandLineTools/usr/lib/clang/9.1.0/lib/darwin/libclang_rt.osx.a]
+  Library search paths: [;/usr/lib;/usr/local/lib]
+  Framework search paths: [;/Library/Frameworks/;/System/Library/Frameworks/]
+  remove lib [System]
+  remove lib [/Library/Developer/CommandLineTools/usr/lib/clang/9.1.0/lib/darwin/libclang_rt.osx.a]
+  collapse library dir [/usr/lib] ==> [/usr/lib]
+  collapse library dir [/usr/local/lib] ==> [/usr/local/lib]
+  collapse framework dir [/Library/Frameworks/] ==> [/Library/Frameworks]
+  collapse framework dir [/System/Library/Frameworks/] ==> [/System/Library/Frameworks]
+  implicit libs: []
+  implicit dirs: [/usr/lib;/usr/local/lib]
+  implicit fwks: [/Library/Frameworks;/System/Library/Frameworks]
 
 
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_08d81/fast"
-/usr/bin/make -f CMakeFiles/cmTC_08d81.dir/build.make CMakeFiles/cmTC_08d81.dir/build
-make[1]: Entering directory '/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_08d81.dir/feature_tests.c.o
-/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_08d81.dir/feature_tests.c.o   -c "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles/feature_tests.c"
-Linking C executable cmTC_08d81
-/root/clion-2018.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_08d81.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_08d81.dir/feature_tests.c.o  -o cmTC_08d81 
-make[1]: Leaving directory '/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_c179c/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_c179c.dir/build.make CMakeFiles/cmTC_c179c.dir/build
+Building C object CMakeFiles/cmTC_c179c.dir/feature_tests.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_c179c.dir/feature_tests.c.o   -c "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/CMakeFiles/feature_tests.c"
+Linking C executable cmTC_c179c
+/Applications/CLion.app/Contents/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c179c.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_c179c.dir/feature_tests.c.o  -o cmTC_c179c 
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -161,17 +129,15 @@ make[1]: Leaving directory '/root/CLionProjects/very_hard_porn/Assignment 1/cmak
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_60e46/fast"
-/usr/bin/make -f CMakeFiles/cmTC_60e46.dir/build.make CMakeFiles/cmTC_60e46.dir/build
-make[1]: Entering directory '/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_60e46.dir/feature_tests.c.o
-/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_60e46.dir/feature_tests.c.o   -c "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles/feature_tests.c"
-Linking C executable cmTC_60e46
-/root/clion-2018.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_60e46.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_60e46.dir/feature_tests.c.o  -o cmTC_60e46 
-make[1]: Leaving directory '/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_c9d76/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_c9d76.dir/build.make CMakeFiles/cmTC_c9d76.dir/build
+Building C object CMakeFiles/cmTC_c9d76.dir/feature_tests.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_c9d76.dir/feature_tests.c.o   -c "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/CMakeFiles/feature_tests.c"
+Linking C executable cmTC_c9d76
+/Applications/CLion.app/Contents/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c9d76.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_c9d76.dir/feature_tests.c.o  -o cmTC_c9d76 
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -181,17 +147,15 @@ make[1]: Leaving directory '/root/CLionProjects/very_hard_porn/Assignment 1/cmak
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_74dd8/fast"
-/usr/bin/make -f CMakeFiles/cmTC_74dd8.dir/build.make CMakeFiles/cmTC_74dd8.dir/build
-make[1]: Entering directory '/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_74dd8.dir/feature_tests.c.o
-/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_74dd8.dir/feature_tests.c.o   -c "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles/feature_tests.c"
-Linking C executable cmTC_74dd8
-/root/clion-2018.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_74dd8.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_74dd8.dir/feature_tests.c.o  -o cmTC_74dd8 
-make[1]: Leaving directory '/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_b43e8/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_b43e8.dir/build.make CMakeFiles/cmTC_b43e8.dir/build
+Building C object CMakeFiles/cmTC_b43e8.dir/feature_tests.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_b43e8.dir/feature_tests.c.o   -c "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/CMakeFiles/feature_tests.c"
+Linking C executable cmTC_b43e8
+/Applications/CLion.app/Contents/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b43e8.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_b43e8.dir/feature_tests.c.o  -o cmTC_b43e8 
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -199,130 +163,101 @@ make[1]: Leaving directory '/root/CLionProjects/very_hard_porn/Assignment 1/cmak
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_04e64/fast"
-/usr/bin/make -f CMakeFiles/cmTC_04e64.dir/build.make CMakeFiles/cmTC_04e64.dir/build
-make[1]: Entering directory '/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_04e64.dir/testCXXCompiler.cxx.o
-/usr/bin/c++     -o CMakeFiles/cmTC_04e64.dir/testCXXCompiler.cxx.o -c "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles/CMakeTmp/testCXXCompiler.cxx"
-Linking CXX executable cmTC_04e64
-/root/clion-2018.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_04e64.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_04e64.dir/testCXXCompiler.cxx.o  -o cmTC_04e64 
-make[1]: Leaving directory '/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_7537c/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_7537c.dir/build.make CMakeFiles/cmTC_7537c.dir/build
+Building CXX object CMakeFiles/cmTC_7537c.dir/testCXXCompiler.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++     -o CMakeFiles/cmTC_7537c.dir/testCXXCompiler.cxx.o -c "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/CMakeFiles/CMakeTmp/testCXXCompiler.cxx"
+Linking CXX executable cmTC_7537c
+/Applications/CLion.app/Contents/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7537c.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/c++    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_7537c.dir/testCXXCompiler.cxx.o  -o cmTC_7537c 
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_d45d1/fast"
-/usr/bin/make -f CMakeFiles/cmTC_d45d1.dir/build.make CMakeFiles/cmTC_d45d1.dir/build
-make[1]: Entering directory '/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_d45d1.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++     -o CMakeFiles/cmTC_d45d1.dir/CMakeCXXCompilerABI.cpp.o -c /root/clion-2018.1.3/bin/cmake/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_d45d1
-/root/clion-2018.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d45d1.dir/link.txt --verbose=1
-/usr/bin/c++      -v CMakeFiles/cmTC_d45d1.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_d45d1 
-Using built-in specs.
-COLLECT_GCC=/usr/bin/c++
-COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/lto-wrapper
-Target: x86_64-pc-linux-gnu
-Configured with: /build/gcc/src/gcc/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --enable-libmpx --with-system-zlib --with-isl --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --enable-gnu-indirect-function --enable-multilib --disable-werror --enable-checking=release --enable-default-pie --enable-default-ssp
+Run Build Command:"/usr/bin/make" "cmTC_01bf6/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_01bf6.dir/build.make CMakeFiles/cmTC_01bf6.dir/build
+Building CXX object CMakeFiles/cmTC_01bf6.dir/CMakeCXXCompilerABI.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/c++     -o CMakeFiles/cmTC_01bf6.dir/CMakeCXXCompilerABI.cpp.o -c /Applications/CLion.app/Contents/bin/cmake/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_01bf6
+/Applications/CLion.app/Contents/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_01bf6.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/c++    -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_01bf6.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_01bf6 
+Apple LLVM version 9.1.0 (clang-902.0.39.1)
+Target: x86_64-apple-darwin17.5.0
 Thread model: posix
-gcc version 8.1.0 (GCC) 
-COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/
-LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d45d1' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cczNYbNs.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_d45d1 /usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0 -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/../../.. CMakeFiles/cmTC_d45d1.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/../../../../lib/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d45d1' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-make[1]: Leaving directory '/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles/CMakeTmp'
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch x86_64 -macosx_version_min 10.13.0 -o cmTC_01bf6 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_01bf6.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/9.1.0/lib/darwin/libclang_rt.osx.a
+@(#)PROGRAM:ld  PROJECT:ld64-351.8
+configured to support archs: armv6 armv7 armv7s arm64 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em (tvOS)
+Library search paths:
+	/usr/lib
+	/usr/local/lib
+Framework search paths:
+	/Library/Frameworks/
+	/System/Library/Frameworks/
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_d45d1/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_d45d1.dir/build.make CMakeFiles/cmTC_d45d1.dir/build]
-  ignore line: [make[1]: Entering directory '/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_d45d1.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTC_d45d1.dir/CMakeCXXCompilerABI.cpp.o -c /root/clion-2018.1.3/bin/cmake/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_d45d1]
-  ignore line: [/root/clion-2018.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d45d1.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++      -v CMakeFiles/cmTC_d45d1.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_d45d1 ]
-  ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=/usr/bin/c++]
-  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/lto-wrapper]
-  ignore line: [Target: x86_64-pc-linux-gnu]
-  ignore line: [Configured with: /build/gcc/src/gcc/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --enable-libmpx --with-system-zlib --with-isl --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --enable-gnu-indirect-function --enable-multilib --disable-werror --enable-checking=release --enable-default-pie --enable-default-ssp]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_01bf6/fast"]
+  ignore line: [/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_01bf6.dir/build.make CMakeFiles/cmTC_01bf6.dir/build]
+  ignore line: [Building CXX object CMakeFiles/cmTC_01bf6.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/Library/Developer/CommandLineTools/usr/bin/c++     -o CMakeFiles/cmTC_01bf6.dir/CMakeCXXCompilerABI.cpp.o -c /Applications/CLion.app/Contents/bin/cmake/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_01bf6]
+  ignore line: [/Applications/CLion.app/Contents/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_01bf6.dir/link.txt --verbose=1]
+  ignore line: [/Library/Developer/CommandLineTools/usr/bin/c++    -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_01bf6.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_01bf6 ]
+  ignore line: [Apple LLVM version 9.1.0 (clang-902.0.39.1)]
+  ignore line: [Target: x86_64-apple-darwin17.5.0]
   ignore line: [Thread model: posix]
-  ignore line: [gcc version 8.1.0 (GCC) ]
-  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d45d1' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cczNYbNs.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_d45d1 /usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0 -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/../../.. CMakeFiles/cmTC_d45d1.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/../../../../lib/crtn.o]
-    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/collect2] ==> ignore
-    arg [-plugin] ==> ignore
-    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/liblto_plugin.so] ==> ignore
-    arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/cczNYbNs.res] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-    arg [-plugin-opt=-pass-through=-lc] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-    arg [--build-id] ==> ignore
-    arg [--eh-frame-hdr] ==> ignore
-    arg [--hash-style=gnu] ==> ignore
-    arg [-m] ==> ignore
-    arg [elf_x86_64] ==> ignore
-    arg [-dynamic-linker] ==> ignore
-    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
-    arg [-pie] ==> ignore
+  ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
+  link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch x86_64 -macosx_version_min 10.13.0 -o cmTC_01bf6 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_01bf6.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/9.1.0/lib/darwin/libclang_rt.osx.a]
+    arg [/Library/Developer/CommandLineTools/usr/bin/ld] ==> ignore
+    arg [-demangle] ==> ignore
+    arg [-lto_library] ==> ignore, skip following value
+    arg [/Library/Developer/CommandLineTools/usr/lib/libLTO.dylib] ==> skip value of -lto_library
+    arg [-dynamic] ==> ignore
+    arg [-arch] ==> ignore
+    arg [x86_64] ==> ignore
+    arg [-macosx_version_min] ==> ignore
+    arg [10.13.0] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_d45d1] ==> ignore
-    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/../../../../lib/Scrt1.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/../../../../lib/crti.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/crtbeginS.o] ==> ignore
-    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0]
-    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/../../../../lib]
-    arg [-L/lib/../lib] ==> dir [/lib/../lib]
-    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
-    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/../../..]
-    arg [CMakeFiles/cmTC_d45d1.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
-    arg [-lstdc++] ==> lib [stdc++]
-    arg [-lm] ==> lib [m]
-    arg [-lgcc_s] ==> lib [gcc_s]
-    arg [-lgcc] ==> lib [gcc]
-    arg [-lc] ==> lib [c]
-    arg [-lgcc_s] ==> lib [gcc_s]
-    arg [-lgcc] ==> lib [gcc]
-    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/crtendS.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/../../../../lib/crtn.o] ==> ignore
-  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0]
-  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/../../../../lib] ==> [/usr/lib]
-  collapse library dir [/lib/../lib] ==> [/lib]
-  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
-  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/../../..] ==> [/usr/lib]
-  implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
-  implicit dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0;/usr/lib;/lib]
-  implicit fwks: []
+    arg [cmTC_01bf6] ==> ignore
+    arg [-search_paths_first] ==> ignore
+    arg [-headerpad_max_install_names] ==> ignore
+    arg [-v] ==> ignore
+    arg [CMakeFiles/cmTC_01bf6.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lc++] ==> lib [c++]
+    arg [-lSystem] ==> lib [System]
+    arg [/Library/Developer/CommandLineTools/usr/lib/clang/9.1.0/lib/darwin/libclang_rt.osx.a] ==> lib [/Library/Developer/CommandLineTools/usr/lib/clang/9.1.0/lib/darwin/libclang_rt.osx.a]
+  Library search paths: [;/usr/lib;/usr/local/lib]
+  Framework search paths: [;/Library/Frameworks/;/System/Library/Frameworks/]
+  remove lib [System]
+  remove lib [/Library/Developer/CommandLineTools/usr/lib/clang/9.1.0/lib/darwin/libclang_rt.osx.a]
+  collapse library dir [/usr/lib] ==> [/usr/lib]
+  collapse library dir [/usr/local/lib] ==> [/usr/local/lib]
+  collapse framework dir [/Library/Frameworks/] ==> [/Library/Frameworks]
+  collapse framework dir [/System/Library/Frameworks/] ==> [/System/Library/Frameworks]
+  implicit libs: [c++]
+  implicit dirs: [/usr/lib;/usr/local/lib]
+  implicit fwks: [/Library/Frameworks;/System/Library/Frameworks]
 
 
 
 
 Detecting CXX [-std=c++1z] compiler features compiled with the following output:
-Change Dir: /root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_3e951/fast"
-/usr/bin/make -f CMakeFiles/cmTC_3e951.dir/build.make CMakeFiles/cmTC_3e951.dir/build
-make[1]: Entering directory '/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_3e951.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++1z -o CMakeFiles/cmTC_3e951.dir/feature_tests.cxx.o -c "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles/feature_tests.cxx"
-Linking CXX executable cmTC_3e951
-/root/clion-2018.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3e951.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_3e951.dir/feature_tests.cxx.o  -o cmTC_3e951 
-make[1]: Leaving directory '/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_82826/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_82826.dir/build.make CMakeFiles/cmTC_82826.dir/build
+Building CXX object CMakeFiles/cmTC_82826.dir/feature_tests.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++    -std=c++1z -o CMakeFiles/cmTC_82826.dir/feature_tests.cxx.o -c "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/CMakeFiles/feature_tests.cxx"
+Linking CXX executable cmTC_82826
+/Applications/CLion.app/Contents/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_82826.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/c++    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_82826.dir/feature_tests.cxx.o  -o cmTC_82826 
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -385,17 +320,15 @@ make[1]: Leaving directory '/root/CLionProjects/very_hard_porn/Assignment 1/cmak
 
 
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: /root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_9ce77/fast"
-/usr/bin/make -f CMakeFiles/cmTC_9ce77.dir/build.make CMakeFiles/cmTC_9ce77.dir/build
-make[1]: Entering directory '/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_9ce77.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTC_9ce77.dir/feature_tests.cxx.o -c "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles/feature_tests.cxx"
-Linking CXX executable cmTC_9ce77
-/root/clion-2018.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9ce77.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_9ce77.dir/feature_tests.cxx.o  -o cmTC_9ce77 
-make[1]: Leaving directory '/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_6118b/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_6118b.dir/build.make CMakeFiles/cmTC_6118b.dir/build
+Building CXX object CMakeFiles/cmTC_6118b.dir/feature_tests.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTC_6118b.dir/feature_tests.cxx.o -c "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/CMakeFiles/feature_tests.cxx"
+Linking CXX executable cmTC_6118b
+/Applications/CLion.app/Contents/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6118b.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/c++    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_6118b.dir/feature_tests.cxx.o  -o cmTC_6118b 
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -458,17 +391,15 @@ make[1]: Leaving directory '/root/CLionProjects/very_hard_porn/Assignment 1/cmak
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_4dd4f/fast"
-/usr/bin/make -f CMakeFiles/cmTC_4dd4f.dir/build.make CMakeFiles/cmTC_4dd4f.dir/build
-make[1]: Entering directory '/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_4dd4f.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_4dd4f.dir/feature_tests.cxx.o -c "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles/feature_tests.cxx"
-Linking CXX executable cmTC_4dd4f
-/root/clion-2018.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4dd4f.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_4dd4f.dir/feature_tests.cxx.o  -o cmTC_4dd4f 
-make[1]: Leaving directory '/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_43c83/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_43c83.dir/build.make CMakeFiles/cmTC_43c83.dir/build
+Building CXX object CMakeFiles/cmTC_43c83.dir/feature_tests.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_43c83.dir/feature_tests.cxx.o -c "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/CMakeFiles/feature_tests.cxx"
+Linking CXX executable cmTC_43c83
+/Applications/CLion.app/Contents/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_43c83.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/c++    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_43c83.dir/feature_tests.cxx.o  -o cmTC_43c83 
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -531,17 +462,15 @@ make[1]: Leaving directory '/root/CLionProjects/very_hard_porn/Assignment 1/cmak
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_5f434/fast"
-/usr/bin/make -f CMakeFiles/cmTC_5f434.dir/build.make CMakeFiles/cmTC_5f434.dir/build
-make[1]: Entering directory '/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_5f434.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_5f434.dir/feature_tests.cxx.o -c "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles/feature_tests.cxx"
-Linking CXX executable cmTC_5f434
-/root/clion-2018.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5f434.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_5f434.dir/feature_tests.cxx.o  -o cmTC_5f434 
-make[1]: Leaving directory '/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_9b592/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_9b592.dir/build.make CMakeFiles/cmTC_9b592.dir/build
+Building CXX object CMakeFiles/cmTC_9b592.dir/feature_tests.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_9b592.dir/feature_tests.cxx.o -c "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/CMakeFiles/feature_tests.cxx"
+Linking CXX executable cmTC_9b592
+/Applications/CLion.app/Contents/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9b592.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/c++    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_9b592.dir/feature_tests.cxx.o  -o cmTC_9b592 
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -602,30 +531,40 @@ make[1]: Leaving directory '/root/CLionProjects/very_hard_porn/Assignment 1/cmak
     Feature record: CXX_FEATURE:0cxx_variadic_macros
     Feature record: CXX_FEATURE:0cxx_variadic_templates
 Determining if the include file pthread.h exists passed with the following output:
-Change Dir: /root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_f305c/fast"
-/usr/bin/make -f CMakeFiles/cmTC_f305c.dir/build.make CMakeFiles/cmTC_f305c.dir/build
-make[1]: Entering directory '/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_f305c.dir/CheckIncludeFile.c.o
-/usr/bin/cc   -std=c99 -Wall -Wextra -Wshadow    -o CMakeFiles/cmTC_f305c.dir/CheckIncludeFile.c.o   -c "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c"
-Linking C executable cmTC_f305c
-/root/clion-2018.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f305c.dir/link.txt --verbose=1
-/usr/bin/cc  -std=c99 -Wall -Wextra -Wshadow     CMakeFiles/cmTC_f305c.dir/CheckIncludeFile.c.o  -o cmTC_f305c 
-make[1]: Leaving directory '/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_eb64d/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_eb64d.dir/build.make CMakeFiles/cmTC_eb64d.dir/build
+Building C object CMakeFiles/cmTC_eb64d.dir/CheckIncludeFile.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -std=c99 -Wall -Wextra -Wshadow    -o CMakeFiles/cmTC_eb64d.dir/CheckIncludeFile.c.o   -c "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c"
+Linking C executable cmTC_eb64d
+/Applications/CLion.app/Contents/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eb64d.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc  -std=c99 -Wall -Wextra -Wshadow  -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_eb64d.dir/CheckIncludeFile.c.o  -o cmTC_eb64d 
 
 
-Determining if the function pthread_create exists in the pthread passed with the following output:
-Change Dir: /root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles/CMakeTmp
+Determining if the pthread_create exist passed with the following output:
+Change Dir: /Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_141d5/fast"
-/usr/bin/make -f CMakeFiles/cmTC_141d5.dir/build.make CMakeFiles/cmTC_141d5.dir/build
-make[1]: Entering directory '/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_141d5.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -std=c99 -Wall -Wextra -Wshadow -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_141d5.dir/CheckFunctionExists.c.o   -c /root/clion-2018.1.3/bin/cmake/share/cmake-3.10/Modules/CheckFunctionExists.c
-Linking C executable cmTC_141d5
-/root/clion-2018.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_141d5.dir/link.txt --verbose=1
-/usr/bin/cc  -std=c99 -Wall -Wextra -Wshadow -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_141d5.dir/CheckFunctionExists.c.o  -o cmTC_141d5 -lpthread 
-make[1]: Leaving directory '/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_046d9/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_046d9.dir/build.make CMakeFiles/cmTC_046d9.dir/build
+Building C object CMakeFiles/cmTC_046d9.dir/CheckSymbolExists.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -std=c99 -Wall -Wextra -Wshadow    -o CMakeFiles/cmTC_046d9.dir/CheckSymbolExists.c.o   -c "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c"
+Linking C executable cmTC_046d9
+/Applications/CLion.app/Contents/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_046d9.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc  -std=c99 -Wall -Wextra -Wshadow  -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_046d9.dir/CheckSymbolExists.c.o  -o cmTC_046d9 
 
+File /Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
 

@@ -1,4 +1,4 @@
-# Install script for directory: /root/CLionProjects/very_hard_porn/Assignment 1/tests
+# Install script for directory: /Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/tests
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -25,11 +25,6 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   else()
     set(CMAKE_INSTALL_COMPONENT)
   endif()
-endif()
-
-# Install shared libraries without execute permission?
-if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  set(CMAKE_INSTALL_SO_NO_EXE "0")
 endif()
 
 # Is this installation the result of a crosscompile?

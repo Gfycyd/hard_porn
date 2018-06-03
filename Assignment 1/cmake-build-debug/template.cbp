@@ -8,173 +8,339 @@
 		<Option virtualFolders="CMake Files\;CMake Files\tests\;CMake Files\CMakeModules\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug"/>
+				<Option working_dir="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/root/CLionProjects/very_hard_porn/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/root/CLionProjects/very_hard_porn/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/root/CLionProjects/very_hard_porn/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/root/CLionProjects/very_hard_porn/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug"/>
+				<Option working_dir="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/root/CLionProjects/very_hard_porn/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/root/CLionProjects/very_hard_porn/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/root/CLionProjects/very_hard_porn/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/root/CLionProjects/very_hard_porn/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug"/>
+				<Option working_dir="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/root/CLionProjects/very_hard_porn/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/root/CLionProjects/very_hard_porn/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/root/CLionProjects/very_hard_porn/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/root/CLionProjects/very_hard_porn/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="test">
-				<Option working_dir="/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug"/>
+				<Option working_dir="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/root/CLionProjects/very_hard_porn/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 test"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/root/CLionProjects/very_hard_porn/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/root/CLionProjects/very_hard_porn/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/root/CLionProjects/very_hard_porn/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 test"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="test_binarize">
-				<Option output="/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/tests/test_binarize" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/tests"/>
+			<Target title="test_stack">
+				<Option output="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/tests/test_stack" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/tests"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/root/CLionProjects/very_hard_porn/Assignment 1/tests/."/>
-					<Add directory="/root/CLionProjects/very_hard_porn/Assignment 1/tests/../src"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/../../../../include/c++/8.1.0"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/../../../../include/c++/8.1.0/x86_64-pc-linux-gnu"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/../../../../include/c++/8.1.0/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/include-fixed"/>
+					<Add directory="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/tests/."/>
+					<Add directory="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/tests/../src"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
 					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/root/CLionProjects/very_hard_porn/Assignment\ 1/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 test_binarize"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/root/CLionProjects/very_hard_porn/Assignment\ 1/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/root/CLionProjects/very_hard_porn/Assignment\ 1/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/root/CLionProjects/very_hard_porn/Assignment\ 1/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment\ 1/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 test_stack"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment\ 1/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment\ 1/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment\ 1/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="test_binarize/fast">
-				<Option output="/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/tests/test_binarize" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/tests"/>
+			<Target title="test_stack/fast">
+				<Option output="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/tests/test_stack" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/tests"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/root/CLionProjects/very_hard_porn/Assignment 1/tests/."/>
-					<Add directory="/root/CLionProjects/very_hard_porn/Assignment 1/tests/../src"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/../../../../include/c++/8.1.0"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/../../../../include/c++/8.1.0/x86_64-pc-linux-gnu"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/../../../../include/c++/8.1.0/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/include-fixed"/>
+					<Add directory="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/tests/."/>
+					<Add directory="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/tests/../src"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
 					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/root/CLionProjects/very_hard_porn/Assignment\ 1/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 test_binarize/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/root/CLionProjects/very_hard_porn/Assignment\ 1/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/root/CLionProjects/very_hard_porn/Assignment\ 1/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/root/CLionProjects/very_hard_porn/Assignment\ 1/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment\ 1/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 test_stack/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment\ 1/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment\ 1/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment\ 1/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_bitMap">
+				<Option output="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/tests/test_bitMap" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/tests/."/>
+					<Add directory="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/tests/../src"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment\ 1/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 test_bitMap"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment\ 1/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment\ 1/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment\ 1/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_bitMap/fast">
+				<Option output="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/tests/test_bitMap" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/tests/."/>
+					<Add directory="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/tests/../src"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment\ 1/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 test_bitMap/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment\ 1/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment\ 1/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment\ 1/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_queue">
+				<Option output="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/tests/test_queue" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/tests/."/>
+					<Add directory="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/tests/../src"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment\ 1/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 test_queue"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment\ 1/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment\ 1/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment\ 1/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_queue/fast">
+				<Option output="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/tests/test_queue" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/tests/."/>
+					<Add directory="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/tests/../src"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment\ 1/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 test_queue/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment\ 1/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment\ 1/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment\ 1/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="test_task">
-				<Option output="/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/tests/test_task" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/tests"/>
+				<Option output="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/tests/test_task" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/tests"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/root/CLionProjects/very_hard_porn/Assignment 1/tests/."/>
-					<Add directory="/root/CLionProjects/very_hard_porn/Assignment 1/tests/../src"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/../../../../include/c++/8.1.0"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/../../../../include/c++/8.1.0/x86_64-pc-linux-gnu"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/../../../../include/c++/8.1.0/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/include-fixed"/>
+					<Add directory="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/tests/."/>
+					<Add directory="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/tests/../src"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
 					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/root/CLionProjects/very_hard_porn/Assignment\ 1/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 test_task"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/root/CLionProjects/very_hard_porn/Assignment\ 1/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/root/CLionProjects/very_hard_porn/Assignment\ 1/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/root/CLionProjects/very_hard_porn/Assignment\ 1/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment\ 1/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 test_task"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment\ 1/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment\ 1/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment\ 1/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="test_task/fast">
-				<Option output="/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/tests/test_task" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/tests"/>
+				<Option output="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/tests/test_task" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/tests"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/root/CLionProjects/very_hard_porn/Assignment 1/tests/."/>
-					<Add directory="/root/CLionProjects/very_hard_porn/Assignment 1/tests/../src"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/../../../../include/c++/8.1.0"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/../../../../include/c++/8.1.0/x86_64-pc-linux-gnu"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/../../../../include/c++/8.1.0/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.1.0/include-fixed"/>
+					<Add directory="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/tests/."/>
+					<Add directory="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/tests/../src"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
 					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/root/CLionProjects/very_hard_porn/Assignment\ 1/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 test_task/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/root/CLionProjects/very_hard_porn/Assignment\ 1/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/root/CLionProjects/very_hard_porn/Assignment\ 1/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/root/CLionProjects/very_hard_porn/Assignment\ 1/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment\ 1/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 test_task/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment\ 1/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment\ 1/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment\ 1/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_binarize">
+				<Option output="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/tests/test_binarize" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/tests/."/>
+					<Add directory="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/tests/../src"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment\ 1/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 test_binarize"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment\ 1/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment\ 1/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment\ 1/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_binarize/fast">
+				<Option output="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/tests/test_binarize" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/tests/."/>
+					<Add directory="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/tests/../src"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment\ 1/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 test_binarize/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment\ 1/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment\ 1/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment\ 1/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/root/CLionProjects/very_hard_porn/Assignment 1/src/binarize.c">
+		<Unit filename="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/src/assignment0_1/binarize.c">
 			<Option target="test_binarize"/>
 		</Unit>
-		<Unit filename="/root/CLionProjects/very_hard_porn/Assignment 1/src/binarize.h">
+		<Unit filename="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/src/assignment0_1/binarize.h">
 			<Option target="test_binarize"/>
 		</Unit>
-		<Unit filename="/root/CLionProjects/very_hard_porn/Assignment 1/src/sykatest.c">
-			<Option target="test_binarize"/>
-		</Unit>
-		<Unit filename="/root/CLionProjects/very_hard_porn/Assignment 1/src/sykatest.h">
-			<Option target="test_binarize"/>
-		</Unit>
-		<Unit filename="/root/CLionProjects/very_hard_porn/Assignment 1/src/task.c">
+		<Unit filename="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/src/assignment0_1/task.c">
 			<Option target="test_task"/>
 		</Unit>
-		<Unit filename="/root/CLionProjects/very_hard_porn/Assignment 1/src/task.h">
+		<Unit filename="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/src/assignment0_1/task.h">
 			<Option target="test_task"/>
 		</Unit>
-		<Unit filename="/root/CLionProjects/very_hard_porn/Assignment 1/tests/test_binarize.c">
+		<Unit filename="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/src/assignment2/priority_queue.c">
+			<Option target="test_queue"/>
+		</Unit>
+		<Unit filename="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/src/assignment2/priority_queue.h">
+			<Option target="test_queue"/>
+		</Unit>
+		<Unit filename="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/src/assignment2/stack.c">
+			<Option target="test_stack"/>
 			<Option target="test_binarize"/>
 		</Unit>
-		<Unit filename="/root/CLionProjects/very_hard_porn/Assignment 1/tests/test_task.c">
+		<Unit filename="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/src/assignment2/stack.h">
+			<Option target="test_binarize"/>
+		</Unit>
+		<Unit filename="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/src/assignment3/bitMap.c">
+			<Option target="test_bitMap"/>
+		</Unit>
+		<Unit filename="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/src/assignment3/bitMap.h">
+			<Option target="test_bitMap"/>
+		</Unit>
+		<Unit filename="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/tests/assignment0_1/test_binarize.c">
+			<Option target="test_binarize"/>
+		</Unit>
+		<Unit filename="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/tests/assignment0_1/test_task.c">
 			<Option target="test_task"/>
 		</Unit>
-		<Unit filename="/root/CLionProjects/very_hard_porn/Assignment 1/CMakeLists.txt">
+		<Unit filename="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/tests/assignment2/test_queue.c">
+			<Option target="test_queue"/>
+		</Unit>
+		<Unit filename="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/tests/assignment2/test_stack.c">
+			<Option target="test_stack"/>
+		</Unit>
+		<Unit filename="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/tests/assignment3/test_bitMap.c">
+			<Option target="test_bitMap"/>
+		</Unit>
+		<Unit filename="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/root/CLionProjects/very_hard_porn/Assignment 1/tests/CMakeLists.txt">
+		<Unit filename="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/tests/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\tests\"/>
 		</Unit>
-		<Unit filename="/root/CLionProjects/very_hard_porn/Assignment 1/CMakeModules/FindCheck.cmake">
+		<Unit filename="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/CMakeModules/FindCheck.cmake">
 			<Option virtualFolder="CMake Files\CMakeModules\"/>
 		</Unit>
 	</Project>

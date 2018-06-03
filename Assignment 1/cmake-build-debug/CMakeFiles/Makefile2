@@ -45,32 +45,38 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /root/clion-2018.1.3/bin/cmake/bin/cmake
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /root/clion-2018.1.3/bin/cmake/bin/cmake -E remove -f
+RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/root/CLionProjects/very_hard_porn/Assignment 1"
+CMAKE_SOURCE_DIR = "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug"
+CMAKE_BINARY_DIR = "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug"
 
 #=============================================================================
 # Directory level rules for directory tests
 
 # Convenience name for "all" pass in the directory.
-tests/all: tests/CMakeFiles/test_binarize.dir/all
+tests/all: tests/CMakeFiles/test_stack.dir/all
+tests/all: tests/CMakeFiles/test_bitMap.dir/all
+tests/all: tests/CMakeFiles/test_queue.dir/all
 tests/all: tests/CMakeFiles/test_task.dir/all
+tests/all: tests/CMakeFiles/test_binarize.dir/all
 
 .PHONY : tests/all
 
 # Convenience name for "clean" pass in the directory.
-tests/clean: tests/CMakeFiles/test_binarize.dir/clean
+tests/clean: tests/CMakeFiles/test_stack.dir/clean
+tests/clean: tests/CMakeFiles/test_bitMap.dir/clean
+tests/clean: tests/CMakeFiles/test_queue.dir/clean
 tests/clean: tests/CMakeFiles/test_task.dir/clean
+tests/clean: tests/CMakeFiles/test_binarize.dir/clean
 
 .PHONY : tests/clean
 
@@ -80,39 +86,113 @@ tests/preinstall:
 .PHONY : tests/preinstall
 
 #=============================================================================
-# Target rules for target tests/CMakeFiles/test_binarize.dir
+# Target rules for target tests/CMakeFiles/test_stack.dir
 
 # All Build rule for target.
-tests/CMakeFiles/test_binarize.dir/all:
-	$(MAKE) -f tests/CMakeFiles/test_binarize.dir/build.make tests/CMakeFiles/test_binarize.dir/depend
-	$(MAKE) -f tests/CMakeFiles/test_binarize.dir/build.make tests/CMakeFiles/test_binarize.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles" --progress-num=1,2,3,4 "Built target test_binarize"
-.PHONY : tests/CMakeFiles/test_binarize.dir/all
+tests/CMakeFiles/test_stack.dir/all:
+	$(MAKE) -f tests/CMakeFiles/test_stack.dir/build.make tests/CMakeFiles/test_stack.dir/depend
+	$(MAKE) -f tests/CMakeFiles/test_stack.dir/build.make tests/CMakeFiles/test_stack.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/CMakeFiles" --progress-num=11,12,13 "Built target test_stack"
+.PHONY : tests/CMakeFiles/test_stack.dir/all
 
 # Include target in all.
-all: tests/CMakeFiles/test_binarize.dir/all
+all: tests/CMakeFiles/test_stack.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-tests/CMakeFiles/test_binarize.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles" 4
-	$(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_binarize.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles" 0
-.PHONY : tests/CMakeFiles/test_binarize.dir/rule
+tests/CMakeFiles/test_stack.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/CMakeFiles" 3
+	$(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_stack.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/CMakeFiles" 0
+.PHONY : tests/CMakeFiles/test_stack.dir/rule
 
 # Convenience name for target.
-test_binarize: tests/CMakeFiles/test_binarize.dir/rule
+test_stack: tests/CMakeFiles/test_stack.dir/rule
 
-.PHONY : test_binarize
-
-# clean rule for target.
-tests/CMakeFiles/test_binarize.dir/clean:
-	$(MAKE) -f tests/CMakeFiles/test_binarize.dir/build.make tests/CMakeFiles/test_binarize.dir/clean
-.PHONY : tests/CMakeFiles/test_binarize.dir/clean
+.PHONY : test_stack
 
 # clean rule for target.
-clean: tests/CMakeFiles/test_binarize.dir/clean
+tests/CMakeFiles/test_stack.dir/clean:
+	$(MAKE) -f tests/CMakeFiles/test_stack.dir/build.make tests/CMakeFiles/test_stack.dir/clean
+.PHONY : tests/CMakeFiles/test_stack.dir/clean
+
+# clean rule for target.
+clean: tests/CMakeFiles/test_stack.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target tests/CMakeFiles/test_bitMap.dir
+
+# All Build rule for target.
+tests/CMakeFiles/test_bitMap.dir/all:
+	$(MAKE) -f tests/CMakeFiles/test_bitMap.dir/build.make tests/CMakeFiles/test_bitMap.dir/depend
+	$(MAKE) -f tests/CMakeFiles/test_bitMap.dir/build.make tests/CMakeFiles/test_bitMap.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/CMakeFiles" --progress-num=5,6,7 "Built target test_bitMap"
+.PHONY : tests/CMakeFiles/test_bitMap.dir/all
+
+# Include target in all.
+all: tests/CMakeFiles/test_bitMap.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+tests/CMakeFiles/test_bitMap.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/CMakeFiles" 3
+	$(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_bitMap.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/CMakeFiles" 0
+.PHONY : tests/CMakeFiles/test_bitMap.dir/rule
+
+# Convenience name for target.
+test_bitMap: tests/CMakeFiles/test_bitMap.dir/rule
+
+.PHONY : test_bitMap
+
+# clean rule for target.
+tests/CMakeFiles/test_bitMap.dir/clean:
+	$(MAKE) -f tests/CMakeFiles/test_bitMap.dir/build.make tests/CMakeFiles/test_bitMap.dir/clean
+.PHONY : tests/CMakeFiles/test_bitMap.dir/clean
+
+# clean rule for target.
+clean: tests/CMakeFiles/test_bitMap.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target tests/CMakeFiles/test_queue.dir
+
+# All Build rule for target.
+tests/CMakeFiles/test_queue.dir/all:
+	$(MAKE) -f tests/CMakeFiles/test_queue.dir/build.make tests/CMakeFiles/test_queue.dir/depend
+	$(MAKE) -f tests/CMakeFiles/test_queue.dir/build.make tests/CMakeFiles/test_queue.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/CMakeFiles" --progress-num=8,9,10 "Built target test_queue"
+.PHONY : tests/CMakeFiles/test_queue.dir/all
+
+# Include target in all.
+all: tests/CMakeFiles/test_queue.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+tests/CMakeFiles/test_queue.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/CMakeFiles" 3
+	$(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_queue.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/CMakeFiles" 0
+.PHONY : tests/CMakeFiles/test_queue.dir/rule
+
+# Convenience name for target.
+test_queue: tests/CMakeFiles/test_queue.dir/rule
+
+.PHONY : test_queue
+
+# clean rule for target.
+tests/CMakeFiles/test_queue.dir/clean:
+	$(MAKE) -f tests/CMakeFiles/test_queue.dir/build.make tests/CMakeFiles/test_queue.dir/clean
+.PHONY : tests/CMakeFiles/test_queue.dir/clean
+
+# clean rule for target.
+clean: tests/CMakeFiles/test_queue.dir/clean
 
 .PHONY : clean
 
@@ -123,7 +203,7 @@ clean: tests/CMakeFiles/test_binarize.dir/clean
 tests/CMakeFiles/test_task.dir/all:
 	$(MAKE) -f tests/CMakeFiles/test_task.dir/build.make tests/CMakeFiles/test_task.dir/depend
 	$(MAKE) -f tests/CMakeFiles/test_task.dir/build.make tests/CMakeFiles/test_task.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles" --progress-num=5,6,7 "Built target test_task"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/CMakeFiles" --progress-num=14,15,16 "Built target test_task"
 .PHONY : tests/CMakeFiles/test_task.dir/all
 
 # Include target in all.
@@ -133,9 +213,9 @@ all: tests/CMakeFiles/test_task.dir/all
 
 # Build rule for subdir invocation for target.
 tests/CMakeFiles/test_task.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles" 3
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/CMakeFiles" 3
 	$(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_task.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/CMakeFiles" 0
 .PHONY : tests/CMakeFiles/test_task.dir/rule
 
 # Convenience name for target.
@@ -150,6 +230,43 @@ tests/CMakeFiles/test_task.dir/clean:
 
 # clean rule for target.
 clean: tests/CMakeFiles/test_task.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target tests/CMakeFiles/test_binarize.dir
+
+# All Build rule for target.
+tests/CMakeFiles/test_binarize.dir/all:
+	$(MAKE) -f tests/CMakeFiles/test_binarize.dir/build.make tests/CMakeFiles/test_binarize.dir/depend
+	$(MAKE) -f tests/CMakeFiles/test_binarize.dir/build.make tests/CMakeFiles/test_binarize.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/CMakeFiles" --progress-num=1,2,3,4 "Built target test_binarize"
+.PHONY : tests/CMakeFiles/test_binarize.dir/all
+
+# Include target in all.
+all: tests/CMakeFiles/test_binarize.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+tests/CMakeFiles/test_binarize.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/CMakeFiles" 4
+	$(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_binarize.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/CMakeFiles" 0
+.PHONY : tests/CMakeFiles/test_binarize.dir/rule
+
+# Convenience name for target.
+test_binarize: tests/CMakeFiles/test_binarize.dir/rule
+
+.PHONY : test_binarize
+
+# clean rule for target.
+tests/CMakeFiles/test_binarize.dir/clean:
+	$(MAKE) -f tests/CMakeFiles/test_binarize.dir/build.make tests/CMakeFiles/test_binarize.dir/clean
+.PHONY : tests/CMakeFiles/test_binarize.dir/clean
+
+# clean rule for target.
+clean: tests/CMakeFiles/test_binarize.dir/clean
 
 .PHONY : clean
 

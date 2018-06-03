@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /root/clion-2018.1.3/bin/cmake/bin/cmake
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /root/clion-2018.1.3/bin/cmake/bin/cmake -E remove -f
+RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/root/CLionProjects/very_hard_porn/Assignment 1"
+CMAKE_SOURCE_DIR = "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug"
+CMAKE_BINARY_DIR = "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/root/clion-2018.1.3/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/root/clion-2018.1.3/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -81,7 +81,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target test
 test:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/root/clion-2018.1.3/bin/cmake/bin/ctest --force-new-ctest-process $(ARGS)
+	/Applications/CLion.app/Contents/bin/cmake/bin/ctest --force-new-ctest-process $(ARGS)
 .PHONY : test
 
 # Special rule for the target test
@@ -91,9 +91,9 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles" "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/CMakeFiles" "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/CMakeFiles/progress.marks"
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -122,17 +122,43 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named test_binarize
+# Target rules for targets named test_stack
 
 # Build rule for target.
-test_binarize: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test_binarize
-.PHONY : test_binarize
+test_stack: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_stack
+.PHONY : test_stack
 
 # fast build rule for target.
-test_binarize/fast:
-	$(MAKE) -f tests/CMakeFiles/test_binarize.dir/build.make tests/CMakeFiles/test_binarize.dir/build
-.PHONY : test_binarize/fast
+test_stack/fast:
+	$(MAKE) -f tests/CMakeFiles/test_stack.dir/build.make tests/CMakeFiles/test_stack.dir/build
+.PHONY : test_stack/fast
+
+#=============================================================================
+# Target rules for targets named test_bitMap
+
+# Build rule for target.
+test_bitMap: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_bitMap
+.PHONY : test_bitMap
+
+# fast build rule for target.
+test_bitMap/fast:
+	$(MAKE) -f tests/CMakeFiles/test_bitMap.dir/build.make tests/CMakeFiles/test_bitMap.dir/build
+.PHONY : test_bitMap/fast
+
+#=============================================================================
+# Target rules for targets named test_queue
+
+# Build rule for target.
+test_queue: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_queue
+.PHONY : test_queue
+
+# fast build rule for target.
+test_queue/fast:
+	$(MAKE) -f tests/CMakeFiles/test_queue.dir/build.make tests/CMakeFiles/test_queue.dir/build
+.PHONY : test_queue/fast
 
 #=============================================================================
 # Target rules for targets named test_task
@@ -147,6 +173,19 @@ test_task/fast:
 	$(MAKE) -f tests/CMakeFiles/test_task.dir/build.make tests/CMakeFiles/test_task.dir/build
 .PHONY : test_task/fast
 
+#=============================================================================
+# Target rules for targets named test_binarize
+
+# Build rule for target.
+test_binarize: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_binarize
+.PHONY : test_binarize
+
+# fast build rule for target.
+test_binarize/fast:
+	$(MAKE) -f tests/CMakeFiles/test_binarize.dir/build.make tests/CMakeFiles/test_binarize.dir/build
+.PHONY : test_binarize/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -156,8 +195,11 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
-	@echo "... test_binarize"
+	@echo "... test_stack"
+	@echo "... test_bitMap"
+	@echo "... test_queue"
 	@echo "... test_task"
+	@echo "... test_binarize"
 .PHONY : help
 
 

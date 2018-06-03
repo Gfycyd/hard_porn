@@ -1,4 +1,7 @@
-/root/clion-2018.1.3/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/root/CLionProjects/very_hard_porn/Assignment 1"
+/Applications/CLion.app/Contents/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1"
+-- Could NOT find PkgConfig (missing: PKG_CONFIG_EXECUTABLE) 
+-- Checking for one of the modules 'check'
+-- Found CHECK: /usr/local/lib/libcheck.dylib
 -- Configuring done
 -- Generating done
--- Build files have been written to: /root/CLionProjects/very_hard_porn/Assignment 1/cmake-build-debug
+-- Build files have been written to: /Users/rinatmullahmetov/CLionProjects/hard_porn_a_2/Assignment 1/cmake-build-debug

@@ -2,7 +2,7 @@
 // Created by cubazis on 24.05.18.
 //
 #include <check.h>
-#include "binarize.h"
+#include "assignment0_1/binarize.h"
 
 
 START_TEST (test_bin_u)
