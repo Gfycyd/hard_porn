@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #include "bitMap.h"
 
 
@@ -8,15 +9,20 @@ void setBitByNumber(int* array, int bit, int position)
     // bit - have to be equal to 0 or 1
     //
     // this function changes bit with number 'position' to the 'bit'
-
-    array[0 + position] = bit;
+    if (position < sizeof(array)/ sizeof(int) && position >= 0)
+        if (bit == 0 || bit == 1)
+            array[0 + position] = bit;
+        else
+            exit(1);
 }
 
 int getBitByNumber(int* array, int position)
 {
     // this function returns position's bit from the array
-
-    return array[0 + position];
+    if (position < sizeof(array)/ sizeof(int) && position >= 0)
+        return array[0 + position];
+    else
+        exit(1);
 }
 
 void setBitByAddress(void* position, int bit)
@@ -25,8 +31,10 @@ void setBitByAddress(void* position, int bit)
     // bit - have to be equal to 0 or 1
     //
     // this function changes bit by memory address to 'bit'
-
-    *(int*)position = bit;
+    if (bit == 0 || bit == 1)
+        *(int*)position = bit;
+    else
+        exit(1);
 }
 
 int getBitByAddress(void* position)
