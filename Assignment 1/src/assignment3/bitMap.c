@@ -1,7 +1,7 @@
 #include <stdlib.h>
+#include "stdio.h"
 #include <assert.h>
 #include "bitMap.h"
-
 
 void setBitByNumber(int* array, int bit, int position)
 {
@@ -10,16 +10,17 @@ void setBitByNumber(int* array, int bit, int position)
     // bit - have to be equal to 0 or 1
     //
     // this function changes bit with number 'position' to the 'bit'
-    assert(position < sizeof(array)/ sizeof(int) && position >= 0);
+
+    assert(((position < (int)sizeof(array)) && (position >= 0)));
     assert(bit == 0 || bit == 1);
-    array[0 + position] = bit;
+    array[position] = bit;
 }
 
 int getBitByNumber(int* array, int position)
 {
     // this function returns position's bit from the array
-    assert(position < sizeof(array)/ sizeof(int) && position >= 0);
-    return array[0 + position];
+    assert(position < (int)sizeof(array) && position >= 0);
+    return array[position];
 }
 
 void setBitByAddress(void* position, int bit)

@@ -1,6 +1,6 @@
 #include <check.h>
 #include "assignment3/bitMap.h"
-
+#include "stdio.h"
 
 START_TEST (test_setBitByNumber)
     {
