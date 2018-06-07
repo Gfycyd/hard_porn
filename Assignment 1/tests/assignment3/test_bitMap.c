@@ -45,22 +45,18 @@ END_TEST
 
 START_TEST (test_setBitByAddress)
     {
-//YOUR CODE HERE
-        // code where change just the lasr symbol
-        /* int array[8] = {0, 0, -90909, 0, 0, 0, 0, 0};
-         int* secondBit = &array[1];
-         setBitByAddress(secondBit, 1);
-         ck_assert_int_eq(*(int*)secondBit,1);
-         int array[8] = {0, 0, -90908, 0, 0, 0, 0, 0};
-         int* thirdBit = &array[2];
-         setBitByAddress(thirdBit, 1);
-         printf("%d\n", array[2]);
-         ck_assert_int_eq(*(int*)thirdBit,-90907);
-        */
-        int array[8] = {0, 0, -90909, -10, 0, 0, 0, 0};
-        int* forthBit = &array[3];
-        setBitByAddress(forthBit, 1);
-        ck_assert_int_eq(*(int*)forthBit,-10);
+  int array[8] = {0, 14, 90909, 0, 0, 0, 0, 0};
+     int* secondBit = &array[1];
+     setBitByAddress(secondBit, 1);
+     ck_assert_int_eq(*(int*)secondBit,15);
+     int* thirdBit = &array[2];
+     setBitByAddress(thirdBit, 0);
+     ck_assert_int_eq(*(int*)thirdBit,90908);
+
+   /* int array[8] = {0, 0, -90909, -10, 0, 0, 0, 0};
+    int* forthBit = &array[3];
+    setBitByAddress(forthBit, 1);
+    ck_assert_int_eq(*(int*)forthBit,-10); */
 
     }
 END_TEST
