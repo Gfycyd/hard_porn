@@ -74,35 +74,40 @@ int getBitByNumber(int* array, int position, int size_of_int)
 
 void setBitByAddress(void* position, int bit)
 {
-    // position - pointer to the bit to change
-    // bit - have to be equal to 0 or 1
-    //
-    // this function changes bit by memory address to 'bit'
-    //change the last position
+   //change the last position
     /* int num = *((int *) position);
     if(bit==0) {
-        num»=1;
-        num«=1;
+        num>>=1;
+        num<<=1;
     }
     else if(bit==1) {
-        num»=1;
+        num>>=1;
 
-        num«=1;
+        num<<=1;
         num++;
     }
 
     *(int *) position = num;
-     * */
+
     //for the case where need to change first bit
-    int num = *((int *) position);
+   /* int num = *((int *) position);
     if(bit==0) {
-        num = abs(num);
+      num = abs(num);
     }
     else if(bit==1) {
         num = abs(num) * (-1);
     }
 
-    *(int *) position = num;
+    *(int *) position = num; */
+    unsigned char *pos = position;
+    unsigned char ex1 = 1;
+    unsigned char ex2 = 126;
+
+    if (bit == 1){
+        pos[0] = pos[0] | ex1;
+    }else{
+        pos[0] = pos[0] & ex2;
+    }
 }
 
 int getBitByAddress(void* position)
